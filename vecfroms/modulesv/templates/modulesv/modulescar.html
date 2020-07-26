@@ -1,0 +1,98 @@
+{% extends 'core/base.html' %}
+{% load static %}
+{% block title %}from{% endblock %}
+{% block content %}
+<section class="page-section about-heading">
+<div class="container" style="padding-top: 0px;">
+{% if request.GET %}
+{%for values in request.GET%}
+
+<div class="alert alert-success" role="alert">
+  <span class="section-heading-upper">Su resultado fue </span>{{values}}
+</div>
+{% endfor %}
+{% endif %}
+
+<div class="jumbotron text-center" style="margin-top: -30px;">
+  <h1 class="display-6" style="padding-bottom: 20px;">¡BIENVENIDO(A) AL TALLER EN LÍNEA DE HIGIENE Y PREVENCIÓN DEL BURNOUT!</h1>
+  <video class="mx-auto" controls>
+  <source src="{% static 'core/video/welcome.mp4'%}" type="video/mp4">
+  <source src="movie.ogg" type="video/ogg">
+Your browser does not support the video tag.
+</video>
+  <p class="lead">
+  <ul class="list-group">
+    <li class="list-group-item">Oficialmente es parte de nuestro grupo de profesionales interesados por su salud y bienestar emocional. <br/> Agradecemos su interés por participar.</li>
+    <li class="list-group-item">Su labor como personal de salud es muy valioso e imprescindible, sin embargo, en su desarrollo
+    profesional, diversos factores como la carga de trabajo, enfrentarse a enfermedades muy demandantes
+    de atención, sobrellevar la vida profesional y personal, entre otros, pueden generarle malestares que se
+    reflejan a nivel físico, emocional y conductual.</li>
+    <li class="list-group-item">Como psicólogos especialistas en medicina conductual, tenemos el objetivo de brindarle las mejores
+    herramientas basadas en evidencia científica, que tengan por objetivo disminuir y prevenir niveles de
+    Burnout, mediante las siguientes técnicas, que se han dividido en módulos.</li>
+  </ul>
+  </p>
+</div>
+<!-- Instruciones -->
+<div class="jumbotron" style="margin-top: -100px;">
+  <h1 class="display-4 text-center">INSTRUCCIONES DEL TALLER</h1> 
+  <hr class="my-4">
+  <p>Cada módulo contiene diversos materiales que puede consultar para adquirir conocimientos sobre las técnicas que se
+enseñarán, además encontrará ejercicios para realizar en el momento frente a su computadora</p>
+  <p>Las técnicas y estrategias trabajadas requieren de su participación y práctica activa, por lo que se le brindarán materiales que
+podrá tener disponible para registrar sus prácticas semanales que irá realizando durante la semana, le pido por favor que
+completando la práctica tome una fotografía de los registros de su actividad y lo cargue en esta página, en la sección “Subir
+actividades semanales”</p>
+  <p>Al final de cada módulo encontrará una evaluación breve sobre los contenidos revisados, su evaluación va a permitir
+desbloquear los módulos siguientes.</p>
+  <p>Cada módulo será revisado por semana, usted tiene la opción de volver a consultar el módulo anterior, pero no el módulo
+siguiente hasta que sea desbloqueado.</p>
+<p>Siga atentamente las indicaciones particulares para cada módulo.</p>
+  
+</div>
+
+ <!-- Modulos -->
+<div class="row">
+  <div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Modulo I</h5>
+        <p class="card-text">PSICOEDUCACIÓN</p>
+        <a href="{% url 'modules1' %}" class="btn btn-primary">Entrar</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Modulo II</h5>
+        <p class="card-text">ENTRENAMIENTO EN RELAJACIÓN</p>
+        <a href="{% url 'modules2' %}" class="btn btn-primary">Entrar</a>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Modulo III</h5>
+        <p class="card-text">SOLUCIÓN DE PROBLEMAS</p>
+        <a href="{% url 'modules3' %}" class="btn btn-primary">Entrar</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Modulo IV</h5>
+        <p class="card-text">PLANEACIÓN DE ACTIVIDADES</p>
+        <a href="{% url 'modules1' %}" class="btn btn-primary">Entrar</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+</div>
+</section>
+{% endblock %}

@@ -1,0 +1,194 @@
+{% extends 'core/base.html' %}
+{% load static %}
+{% block title %}BURNOUT{% endblock %}
+{% block content %}
+
+<section class="page-section about-heading">
+  <div class="container">
+    <div class="about-heading-content">
+      <div class="row">
+        <div class="col-xl-11 col-lg-10 mx-auto">
+          <div class="bg-faded rounded p-5">
+
+          
+            <h2 class="section-heading mb-6 text-center" style="padding-bottom: 30px;">
+              <span class="section-heading-upper">MBI (INVENTARIO DE BURNOUT DE MASLACH)</span>
+            </h2>
+            <h4 class="section-heading mb-6" style='margin-bottom: 3rem;'>
+
+                Los resultados de este cuestionario son estrictamente confidenciales y en ningún caso accesible a otras personas.
+                A cada una de las frases debe responder expresando la frecuencia con que tiene ese sentimiento, poniendo una cruz en la casilla
+                correspondiente y número que considere más adecuado, no existen respuestas mejores o peores.
+            </h4>
+
+            <!-- Formulario de contacto -->
+
+            <form action="" method="POST">
+                {% csrf_token %}
+                <div class="form-group" style='margin-bottom: 16rem;'>
+                    <label>1. Debido a mi trabajo me siento emocionalmente agotado.</label>
+                    <div class="input-group">
+                        {{form.que1}}
+                    </div>
+                         {{form.que1.errors}}
+                </div>
+                <div class="form-group" style='margin-bottom: 16rem;'>
+                    <label>2. Al final de la jornada me siento agotado.</label>
+                    <div class="input-group">
+                        {{form.que2}}
+                    </div>
+                    {{form.que2.errors}}
+                </div>
+                <div class="form-group" style='margin-bottom: 16rem;'>
+                    <label>3. Me encuentro cansado cuando me levanto por las mañanas y tengo que enfrentarme a otro día de trabajo.</label>
+                    <div class="input-group">
+                        {{form.que3}}
+                    </div>
+                    {{form.que3.errors}}
+                </div>
+                <div class="form-group" style='margin-bottom: 16rem;'>
+                    <label>4. Me encuentro cansado cuando me levanto por las mañanas y tengo que enfrentarme a otro día de trabajo.</label>
+                    <div class="input-group">
+                        {{form.que4}}
+                    </div>
+                    {{form.que4.errors}}
+                </div>
+                <div class="form-group" style='margin-bottom: 16rem;'>
+                    <label>5. Me encuentro cansado cuando me levanto por las mañanas y tengo que enfrentarme a otro día de trabajo.</label>
+                    <div class="input-group">
+                        {{form.que5}}
+                    </div>
+                    {{form.que5.errors}}
+                </div>
+                <div class="form-group" style='margin-bottom: 16rem;'>
+                    <label>6. Me encuentro cansado cuando me levanto por las mañanas y tengo que enfrentarme a otro día de trabajo.</label>
+                    <div class="input-group">
+                        {{form.que6}}
+                    </div>
+                    {{form.que6.errors}}
+                </div>
+                <div class="form-group" style='margin-bottom: 16rem;'>
+                    <label>7. Me encuentro cansado cuando me levanto por las mañanas y tengo que enfrentarme a otro día de trabajo.</label>
+                    <div class="input-group">
+                        {{form.que7}}
+                    </div>
+                    {{form.que7.errors}}
+                </div>
+                <div class="form-group" style='margin-bottom: 16rem;'>
+                    <label>8. Me encuentro cansado cuando me levanto por las mañanas y tengo que enfrentarme a otro día de trabajo.</label>
+                    <div class="input-group">
+                        {{form.que8}}
+                    </div>
+                    {{form.que8.errors}}
+                </div>
+                <div class="form-group" style='margin-bottom: 16rem;'>
+                    <label>9. Me encuentro cansado cuando me levanto por las mañanas y tengo que enfrentarme a otro día de trabajo.</label>
+                    <div class="input-group">
+                        {{form.que9}}
+                    </div>
+                    {{form.que9.errors}}
+                </div>
+                <div class="form-group" style='margin-bottom: 16rem;'>
+                    <label>10. Me encuentro cansado cuando me levanto por las mañanas y tengo que enfrentarme a otro día de trabajo.</label>
+                    <div class="input-group">
+                        {{form.que10}}
+                    </div>
+                    {{form.que10.errors}}
+                </div>
+                <div class="form-group" style='margin-bottom: 16rem;'>
+                    <label>11. Me encuentro cansado cuando me levanto por las mañanas y tengo que enfrentarme a otro día de trabajo.</label>
+                    <div class="input-group">
+                        {{form.que11}}
+                    </div>
+                    {{form.que11.errors}}
+                </div>
+                <div class="form-group" style='margin-bottom: 16rem;'>
+                    <label>12. Me encuentro cansado cuando me levanto por las mañanas y tengo que enfrentarme a otro día de trabajo.</label>
+                    <div class="input-group">
+                        {{form.que12}}
+                    </div>
+                    {{form.que12.errors}}
+                </div>
+                <div class="form-group" style='margin-bottom: 16rem;'>
+                    <label>13. Me encuentro cansado cuando me levanto por las mañanas y tengo que enfrentarme a otro día de trabajo.</label>
+                    <div class="input-group">
+                        {{form.que13}}
+                    </div>
+                    {{form.que13.errors}}
+                </div>
+                <div class="form-group" style='margin-bottom: 16rem;'>
+                    <label>14. Me encuentro cansado cuando me levanto por las mañanas y tengo que enfrentarme a otro día de trabajo.</label>
+                    <div class="input-group">
+                        {{form.que14}}
+                    </div>
+                    {{form.que14.errors}}
+                </div>
+                <div class="form-group" style='margin-bottom: 16rem;'>
+                    <label>15. Me encuentro cansado cuando me levanto por las mañanas y tengo que enfrentarme a otro día de trabajo.</label>
+                    <div class="input-group">
+                        {{form.que15}}
+                    </div>
+                    {{form.que15.errors}}
+                </div>
+                <div class="form-group" style='margin-bottom: 16rem;'>
+                    <label>16. Me encuentro cansado cuando me levanto por las mañanas y tengo que enfrentarme a otro día de trabajo.</label>
+                    <div class="input-group">
+                        {{form.que16}}
+                    </div>
+                    {{form.que16.errors}}
+                </div>
+                <div class="form-group" style='margin-bottom: 16rem;'>
+                    <label>17. Me encuentro cansado cuando me levanto por las mañanas y tengo que enfrentarme a otro día de trabajo.</label>
+                    <div class="input-group">
+                        {{form.que17}}
+                    </div>
+                    {{form.que17.errors}}
+                </div>
+                <div class="form-group" style='margin-bottom: 16rem;'>
+                    <label>18. Me encuentro cansado cuando me levanto por las mañanas y tengo que enfrentarme a otro día de trabajo.</label>
+                    <div class="input-group">
+                        {{form.que18}}
+                    </div>
+                    {{form.que18.errors}}
+                </div>
+                <div class="form-group" style='margin-bottom: 16rem;'>
+                    <label>19. Me encuentro cansado cuando me levanto por las mañanas y tengo que enfrentarme a otro día de trabajo.</label>
+                    <div class="input-group">
+                        {{form.que19}}
+                    </div>
+                    {{form.que19.errors}}
+                </div>
+                <div class="form-group" style='margin-bottom: 16rem;'>
+                    <label>20. Me encuentro cansado cuando me levanto por las mañanas y tengo que enfrentarme a otro día de trabajo.</label>
+                    <div class="input-group">
+                        {{form.que20}}
+                    </div>
+                    {{form.que20.errors}}
+                </div>
+                <div class="form-group" style='margin-bottom: 16rem;'>
+                    <label>21. Me encuentro cansado cuando me levanto por las mañanas y tengo que enfrentarme a otro día de trabajo.</label>
+                    <div class="input-group">
+                        {{form.que21}}
+                    </div>
+                    {{form.que21.errors}}
+                </div>
+                <div class="form-group" style='margin-bottom: 16rem;'>
+                    <label>22. Me encuentro cansado cuando me levanto por las mañanas y tengo que enfrentarme a otro día de trabajo.</label>
+                    <div class="input-group">
+                        {{form.que22}}
+                    </div>
+                    {{form.que22.errors}}
+                </div>
+
+                <div class="text-center">
+                    <input type="submit" class="btn btn-primary btn-block py-2" value="Enviar">
+                </div>
+            </form>
+            <!-- Fin formulario de contacto -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock %}

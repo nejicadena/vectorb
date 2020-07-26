@@ -1,0 +1,86 @@
+{% extends 'core/base.html' %}
+{% load static %}
+{% block title %}from{% endblock %}
+{% block content %}
+<section class="page-section about-heading" style="padding-top:0px; text-align:center;">
+<div class="container" style="padding-top: 0px;">
+
+<div class="jumbotron">
+  <h1 class="display-4">MÓDULO I. PSICOEDUCACIÓN</h1>
+  <p class="lead">Objetivo: Conocer las generalidades sobre el burnout e identificar situaciones que lo generan</p>
+  <hr class="my-4">
+  <p>Para comenzar este módulo, le pedimos que piense en las siguientes preguntas:</p>
+  <p class="lead">
+<ul class="list-group">
+  <li class="list-group-item">¿Se ha sentido exhausta(o) física y emocionalmente?</li>
+  <li class="list-group-item">¿Percibe que su rendimiento laboral ha disminuido a pesar de sus esfuerzos?</li>
+  <li class="list-group-item">¿Ha tenido insomnio o hipersomnio?</li>
+  <li class="list-group-item">¿Ha sentido dolores musculares?</li>
+  <li class="list-group-item">¿Ha tenido problemas gastrointestinales? </li>
+  <li class="list-group-item">¿Ha experimentado mareos, dolor de pecho y aumento en su frecuencia cardíaca? </li>
+</ul>
+  </p>
+  <p style="padding-top:50px; text-align:left;">
+Si sus respuestas fueron mayormente afirmativas, puede que usted tenga burnout o síndrome de desgaste
+profesional, probablemente ha oído hablar mucho sobre éste, pero ¿qúe es? ¿por qué inicia? ¿por qué es
+importante conocerlo y reconocerlo en nuestras vidas?
+
+Estas preguntas las podrán clarificar en este módulo. Antes de saber qué estrategias podemos llevar a cabo
+para afrontar el burnout, necesitamos conocer esta condición e identificar qué situaciones son las que nos
+hacen sentirnos “quemados por el trabajo”.
+
+Mire los siguientes materiales que le ayudarán a conocer más al respecto.
+</p>
+</div>
+<hr class="my-4">
+<!-- Contenido -->
+<!-- Imagen -->
+<div>
+<img src="{% static 'core/img/module1.png'%}" class="img-fluid" alt="Responsive image">
+</div>
+<hr class="my-4">
+<!-- Video interno -->
+<div class="mx-auto" >
+<video class="mx-auto" controls>
+  <source src="{% static 'core/video/historiaBurnout.mp4'%}" type="video/mp4">
+  <source src="movie.ogg" type="video/ogg">
+Your browser does not support the video tag.
+</video>
+</div>
+<hr class="my-4">
+<!-- Video exerno -->
+<figure class="swipe"><iframe src="https://www.swipe.to/embed/6159rr" allowfullscreen></iframe></figure><style>figure.swipe{display:block;position:relative;padding-bottom:56.25%;height:0;overflow:hidden;}figure.swipe iframe{position:absolute;top:0;left:0;width:100%;height:100%;border:none;}</style>
+<hr class="my-4">
+
+<!-- ACTIVIDAD -->
+<div class="jumbotron">
+  <h1 class="display-6">Ejercicio 1.</h1>
+  <p class="lead">RECONOCIENDO LO QUE ME HACE SENTIR QUEMADO(a) POR EL TRABAJO.</p>
+  <hr class="my-4" >
+  <p style="text-align:left;">Le pido que piense en la o las situaciones que identifica que le han causado algunos de los síntomas relacionados
+con el burnout, cuando aparece esa situación ¿qué hace? ¿qué siente en su cuerpo? ¿qué piensa? Describa lo
+anterior en la siguiente tabla, puede relatar más de una situación:</p>
+<p style="text-align:left;"> Describa lo anterior en la siguiente tabla, puede relatar más de una situación:</p>
+  <p class="lead">
+    <div class="row">
+        <div class="col-sm-3">SITUACIÓN</div>
+        <div class="col-sm-3">¿QUÉ HAGO CUANDO APARECE ESA SITUACIÓN?</div>
+        <div class="col-sm-3">¿QUÉ SIENTO EN MI CUERPO?</div>
+        <div class="col-sm-3">¿QUÉ PIENSO CUANDO ME APARECE ESA SITUACIÓN?</div>
+    </div>
+    <div class="row">
+        <div class="col-sm-3"><textarea class="form-control" id="exampleFormControlTextarea1" rows="6"></textarea></div>
+        <div class="col-sm-3"><textarea class="form-control" id="exampleFormControlTextarea1" rows="6"></textarea></div>
+        <div class="col-sm-3"><textarea class="form-control" id="exampleFormControlTextarea1" rows="6"></textarea></div>
+        <div class="col-sm-3"><textarea class="form-control" id="exampleFormControlTextarea1" rows="6"></textarea></div>
+    </div>
+  </p>
+  <hr class="my-4">
+  <button type="button" class="btn btn-light btn-lg btn-block" style="background-color: #82E0AA;">DESCARGAR REGISTRO DE PRÁCTICA</button>
+  <button type="button" class="btn btn-light btn-lg btn-block" style="background-color: #82E0AA;">CUESTIONARIO MÓDULO I</button>
+  <hr class="my-4">
+  <button type="button" class="btn btn-primary btn-lg">Siguiente modulo</button>
+</div>
+</div>
+</section>
+{% endblock %}

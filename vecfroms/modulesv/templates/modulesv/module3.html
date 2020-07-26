@@ -1,0 +1,86 @@
+{% extends 'core/base.html' %}
+{% load static %}
+{% block title %}from{% endblock %}
+{% block content %}
+<section class="page-section about-heading" style="padding-top:0px; text-align:center;">
+<div class="container" style="padding-top: 0px;">
+
+<div class="jumbotron">
+  <h1 class="display-4">MÓDULO II. ENTRENAMIENTO EN RELAJACIÓN</h1>
+  <p class="lead">Objetivo: Aprender estrategias de relajación para disminuir las respuestas fisiológicas que surgen ante situaciones estresantes.</p>
+  <hr class="my-4">
+  
+  <p style='text-align: left;'>
+Bienvenido(a) al módulo de relajación, para iniciar, quisiera preguntarle ¿se ha dado cuenta de las sensaciones físicas que
+tiene cuando se siente bajo mucho estrés?
+  </p>
+  <p style='text-align: left;'>
+Con nuestra vida rutinaria, difícilmente nos damos un momento para prestar atención a nuestro cuerpo, mucho más si
+estamos bajo situaciones estresantes, no nos damos cuenta lo que sentimos hasta que el cuerpo nos da señales más
+fuertes de que algo anda mal, señales como dolores de estomago, hasta alteraciones en el sueño. ¿Recuerda el ejercicio
+del módulo anterior? Describió las situaciones estresantes y cómo se sentía físicamente cuando surgían, pero ¿fue fácil
+hacerlo? A muchas personas se nos dificulta mucho recordar lo que sentimos porque en el momento en el que sucede no
+prestamos atención a aquellas reacciones físicas, por lo tanto, un primer paso es comenzar a ser más observador y
+reconocer estas reacciones para poder controlarlas.
+  </p>
+  <p style='text-align: left;'>
+En este módulo usted aprenderá más respecto al estrés, sus manifestaciones fisiológicas y estrategias para controlarlas y
+reducirlas a través de una de las mejores técnicas de relajación.
+  </p>
+  
+</div>
+<hr class="my-4">
+<div class="mx-auto" >
+<video class="mx-auto" controls>
+  <source src="{% static 'core/video/estres.mp4'%}" type="video/mp4">
+  <source src="movie.ogg" type="video/ogg">
+Your browser does not support the video tag.
+</video>
+</div>
+<hr class="my-4">
+<div>
+<img src="{% static 'core/img/module3.jpeg'%}" class="img-fluid" alt="Responsive image">
+</div>
+
+<div class="jumbotron">
+<h1 class="display-6">Audio de relajación</h1>
+<audio controls>
+  <source src="{% static 'core/video/respiracion.mp3'%}" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+</div>
+<!-- Actividad  -->
+<div class="jumbotron">
+  <h1 class="display-6">Ejercicio 3.</h1>
+  <p class="lead">PRACTICANDO LA RESPIRACIÓN DIAFRAGMÁTICA.</p>
+  <hr class="my-4">
+  <p>Vamos a registrar nuestros niveles de estrés antes y después de nuestro entrenamiento en relajación, esto lo
+indicaremos en una escala del 0 al 10, en el que 0 es nada de estrés y 10 es mucho estrés. Registraremos en dos
+momentos:</p>
+
+<p>Antes de reproducir el video del ejercicio de respiración diafragmática, en la columna izquierda.<p>
+
+<p>Después de reproducir el video, en la columna izquierda.</p>
+  <p class="lead">
+    <div class="row">
+        <div class="col-sm-3">SITUACIÓN</div>
+        <div class="col-sm-3">¿QUÉ HAGO CUANDO APARECE ESA SITUACIÓN?</div>
+        <div class="col-sm-3">¿QUÉ SIENTO EN MI CUERPO?</div>
+        <div class="col-sm-3">¿QUÉ PIENSO CUANDO ME APARECE ESA SITUACIÓN?</div>
+    </div>
+    <div class="row">
+        <div class="col-sm-3"><textarea class="form-control" id="exampleFormControlTextarea1" rows="6"></textarea></div>
+        <div class="col-sm-3"><textarea class="form-control" id="exampleFormControlTextarea1" rows="6"></textarea></div>
+        <div class="col-sm-3"><textarea class="form-control" id="exampleFormControlTextarea1" rows="6"></textarea></div>
+        <div class="col-sm-3"><textarea class="form-control" id="exampleFormControlTextarea1" rows="6"></textarea></div>
+    </div>
+  </p>
+  <hr class="my-4">
+  <button type="button" class="btn btn-warning btn-lg btn-block">DESCARGAR REGISTRO DE PRÁCTICA</button>
+  <button type="button" class="btn btn-warning btn-lg btn-block">CUESTIONARIO MÓDULO II</button>
+  <hr class="my-4">
+  <button type="button" class="btn btn-primary btn-lg">Siguiente modulo</button>
+</div>
+</div>
+</section>
+{% endblock %}
