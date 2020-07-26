@@ -5,7 +5,7 @@ main{
     --jumbotron-padding-y: 3rem;
 }
 body{
-    background-color: rgba(187, 129, 13, 0.205);
+    background-color: #EFEFEF;
 }
 .jumbotron {
     padding-top: var(--jumbotron-padding-y);
