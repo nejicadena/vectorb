@@ -1,10 +1,5 @@
 from django import forms
 
-FAVORITE_COLORS_CHOICES = [
-    ('blue', 'Blue'),
-    ('green', 'Green'),
-    ('black', 'Black'),
-]
 points = [
     ('0', 'Nunca'),
     ('1', 'Alguna vez al año o menos'),
@@ -28,9 +23,8 @@ class ContactForm(forms.Form):
     work = forms.CharField(required=True, widget=forms.TextInput(attrs={'class':'form-control'}))
     service = forms.CharField(required=True, widget=forms.TextInput(attrs={'class':'form-control'}))
     sick = forms.CharField(required=True, widget=forms.TextInput(attrs={'class':'form-control'}))
-    who = forms.CharField(required=True, widget=forms.TextInput(attrs={'class':'form-control'}))
-    color = forms.ChoiceField( choices=FAVORITE_COLORS_CHOICES,widget=forms.RadioSelect(attrs={}))
-
+    who = forms.CharField(required=False, widget=forms.TextInput(attrs={'class':'form-control'}))
+    
 
     def send_email(self):
         # send email using the self.cleaned_data dictionary
