@@ -12,6 +12,7 @@
     <link href="{% static 'core/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
     <link href="{% static 'core/vendor/font-awesome/css/font-awesome.min.css' %}" rel="stylesheet" type="text/css">
     <link href="{% static 'core/css/main.css' %}" rel="stylesheet">
+	<link href="{% static 'core/css/fontawesome-all.min.css' %}" rel="stylesheet">
     <link rel="stylesheet" href="{% static  'core/css/noscript.css' %}" />
   </head>
   <body>
@@ -36,8 +37,10 @@
 							<h2>Menu</h2>
 							<ul class="links">
 								<li><a href="index.html">Home</a></li>
-								<li><a href="generic.html">Generic</a></li>
-								<li><a href="elements.html">Elements</a></li>
+								<li><a href="{% url 'modules1' %}">Modulo 1</a></li>
+								<li><a href="{% url 'modules2' %}">Modulo 2</a></li>
+								<li><a href="{% url 'modules3' %}">Modulo 3</a></li>
+								<li><a href=>Modulo 4</a></li>
 								<li><a href="#">Log In</a></li>
 								<li><a href="#">Sign Up</a></li>
 							</ul>
