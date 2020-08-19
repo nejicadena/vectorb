@@ -5,3 +5,4 @@ vecfroms/formv/__pycache__/
 vecfroms/modules/__pycache__/
 vecfroms/registration/__pycache__/
 vecfroms/vectorfroms/__pycache__/
+*.pyc
