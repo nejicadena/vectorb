@@ -17,7 +17,7 @@
 						<!-- One -->
 							<section id="one" class="wrapper spotlight style1">
 								<div class="inner">
-									<a href="#" class="image"><img src="images/pic01.jpg" alt="" /></a>
+									<a href="#" class="image"><img src="{% static  'core/img/psi.jpg' %}" alt="" /></a>
 									<div class="content">
 										<h2 class="major">Conozca a la responsable del taller:</h2>
 										<h3 class="major">Psicóloga Diana Perez</h3>
@@ -30,7 +30,7 @@
 						<!-- Two -->
 							<section id="two" class="wrapper alt spotlight style2">
 								<div class="inner">
-									<a href="#" class="image"><img src="images/pic02.jpg" alt="" /></a>
+									<a href="#" class="image"><img src="{% static  'core/img/cues.png' %}" alt="" /></a>
 									<div class="content">
 										<h3 class="major">Antes de continuar, por favor responda un breve cuestionario.</h3>
 										
@@ -66,25 +66,25 @@
 											<a href="#" class="image"><img src="images/pic04.jpg" alt="" /></a>
 											<h3 class="major">Modulo 1</h3>
 											<p>Psicoeducación</p>
-											<a href="#" class="special">Learn more</a>
+											<a href="{% url 'modules1' %}" class="special">Learn more</a>
 										</article>
 										<article>
 											<a href="#" class="image"><img src="images/pic05.jpg" alt="" /></a>
 											<h3 class="major">Modulo 2</h3>
 											<p>Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id nulla dignissim dapibus ultrices.</p>
-											<a href="#" class="special">Learn more</a>
+											<a href="{% url 'modules2' %}" class="special">Learn more</a>
 										</article>
 										<article>
 											<a href="#" class="image"><img src="images/pic06.jpg" alt="" /></a>
 											<h3 class="major">Modulo 3</h3>
 											<p>Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id nulla dignissim dapibus ultrices.</p>
-											<a href="#" class="special">Learn more</a>
+											<a href="{% url 'modules3' %}" class="special">Learn more</a>
 										</article>
 										<article>
 											<a href="#" class="image"><img src="images/pic07.jpg" alt="" /></a>
 											<h3 class="major">Modulo 4</h3>
 											<p>Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id nulla dignissim dapibus ultrices.</p>
-											<a href="#" class="special">Learn more</a>
+											<a href="{% url 'modules1' %}" class="special">Learn more</a>
 										</article>
 									</section>
 									<ul class="actions">
@@ -108,7 +108,7 @@
 									Nashville, TN 00000-0000
 								</li>
 								<li class="icon solid fa-phone">(000) 000-0000</li>
-								
+							
 								<li class="icon brands fa-twitter"><a href="#">twitter.com/untitled-tld</a></li>
 								<li class="icon brands fa-facebook-f"><a href="#">facebook.com/untitled-tld</a></li>
 								<li class="icon brands fa-instagram"><a href="#">instagram.com/untitled-tld</a></li>
