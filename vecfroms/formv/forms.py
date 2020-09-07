@@ -9,7 +9,10 @@ points = [
     ('5', 'Varias veces a la semana'),
     ('6', 'Diariamente'),
 ]
-
+acepted = [
+    ('0', 'He leído este formulario de consentimiento y acepto participar en el taller “Estrategias de acción ante el burnout”'),
+    ('1','No acepto dar mi consentimiento y rechazo participar en el taller “Estrategias de acción ante el burnout”')
+]
 
 class ContactForm(forms.Form):
     
@@ -54,3 +57,6 @@ class FormBornout(forms.Form):
     que20 = forms.ChoiceField(choices=points, widget=forms.RadioSelect(attrs={'class':'form-check-input'}))
     que21 = forms.ChoiceField(choices=points, widget=forms.RadioSelect(attrs={'class':'form-check-input'}))
     que22 = forms.ChoiceField(choices=points, widget=forms.RadioSelect(attrs={'class':'form-check-input'}))
+
+class FormConsent(forms.Form):
+    acepted = forms.ChoiceField(choices=acepted,widget=forms.RadioSelect(attrs={'class':'form-check-input'}))

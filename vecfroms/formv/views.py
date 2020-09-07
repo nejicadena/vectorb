@@ -1,12 +1,19 @@
-from .forms import ContactForm, FormBornout
+from .forms import ContactForm, FormBornout, FormConsent
 from django.views.generic.edit import FormView
 from django.shortcuts import redirect, render
 from django.urls import reverse_lazy , reverse
 
+class ConsentiView(FormView):
+    template_name = 'formv/consent.html'
+    form_class = FormConsent
+   
+    success_url = 'contact'
+  
+
 class ContactView(FormView):
     template_name = 'formv/valid.html'
     form_class = ContactForm
-    success_url = 'bornout'
+    success_url = '../bornout'
     
 
     def form_valid(self, form):
@@ -44,5 +51,5 @@ def BornoutView(request):
         res = int(var1)+int(var2)+int(var3)+int(var4)+int(var5)+int(var6)+int(var7)+int(var8)+int(var9)+int(var10)+int(var11)+int(var12)+int(var13)+int(var14)+int(var15)+int(var16)+int(var17)+int(var18)+int(var19)+int(var20)+int(var21)+int(var22)
 
         print(res)
-        return redirect(reverse('modules')+'?'+str(res))
+        return redirect(reverse('modules1')+'?'+str(res))
     return render(request, 'formv/formBornout.html',{'form':bform})

@@ -12,65 +12,71 @@
     <link href="{% static 'core/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
     <link href="{% static 'core/vendor/font-awesome/css/font-awesome.min.css' %}" rel="stylesheet" type="text/css">
     <link href="{% static 'core/css/main.css' %}" rel="stylesheet">
+	<link href="{% static 'core/css/fontawesome-all.min.css' %}" rel="stylesheet">
+    <link rel="stylesheet" href="{% static  'core/css/noscript.css' %}" />
+	  <link rel="stylesheet" href="{% static  'core/css/cookiecss.css' %}" />
   </head>
   <body>
-    <body>
+    <body class="is-preload" style="background-image: linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8)), url('{% static 'core/img/bg.jpg'%}');">
       <!-- Navegación -->
-      <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #85C1E9;">
-        <div class="container">
-          <a class="navbar-brand" href="{% url 'home' %}">Inicio</a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ned" aria-controls="ned" aria-expanded="false">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="ned">
+      <body class="is-preload">
 
-            <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-               <a class="nav-link" href="{% url 'modules'%}">Introducción <span class="sr-only">(current)</span></a>
-                </li>
-              <li class="nav-item active">
-               <a class="nav-link" href="{% url 'formBornout'%}">Form Bornout <span class="sr-only">(current)</span></a>
-                </li>
-               <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="{% url 'modules'%}" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Modulos
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <a class="dropdown-item" href="{% url 'modules1'%}">Modulo 1</a>
-                <a class="dropdown-item" href="{% url 'modules2'%}">Modulo 2</a>
-                <a class="dropdown-item" href="{% url 'modules3'%}">Modulo 3</a>
-              </div>
-              </li>
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
 
-            </ul>
-            <ul class="navbar-nav">
-              {% if not request.user.is_authenticated %}
-                <li class="nav-item">
-                  <a class="nav-link" href="{% url 'login' %}">Acceder</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="{% url 'signup' %}">Registro</a>
-                  </li>
-              {% else %}
-              <li class="nav-item">
-                <a class="nav-link" href="">Mensajes</a>
-              </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="">Perfil</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="{% url 'logout' %}">Salir</a>
-                </li>
-              {% endif %}
-            </ul>
-          </div>
-        </div>
-      </nav>
+				<!-- Header -->
+					<header id="header" class="alt">
+						<h1><a href="{% url 'home' %}">Inicio</a></h1>
+						<nav>
+							<a href="#menu">Menu</a>
+						</nav>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<div class="inner">
+							<h2>Menu</h2>
+							<ul class="links">
+								<li><a href="{% url 'home' %}">Inicio</a></li>
+                <li><a href="{% url 'about' %}">¿Quienes Somos?</a></li>
+								<li><a href="{% url 'modules1' %}">Modulo 1</a></li>
+								<li><a href="{% url 'modules2' %}">Modulo 2</a></li>
+								<li><a href="{% url 'modules3' %}">Modulo 3</a></li>
+								<li><a href="#">Modulo 4</a></li>
+                {% if not request.user.is_authenticated %}
+								<li><a href="{% url 'login' %}">Inicar sesión</a></li>
+								<li><a href="{% url 'signup' %}">Registrarse</a></li>
+                {% else %}
+                <li><a href="{% url 'logout' %}">Salir</a></li>
+                {% endif %}
+							</ul>
+							<a href="#" class="close">Close</a>
+						</div>
+					</nav>
       <!-- Contenido -->
+	  
+	
       {% block content %}{% endblock %}
+	  <!-- Cookies -->
+	<div class="cookie-container">
+      <p>
+        Usamos cookies en este sitio web para brindarle la mejor experiencia en nuestro sitio y mostrarle anuncios relevantes. Para obtener más información, lea nuestra
+        <a href="#">política de privacidad </a> y <a href="#">política de cookies.</a>.
+      </p>
+
+      <button class="cookie-btn">
+       <p> Acepto  </p>
+       </button>
+    </div>
       <!-- Javascript -->
       <script src="{% static 'core/vendor/jquery/jquery.min.js' %}"></script>
       <script src="{% static 'core/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+      <script src="{% static 'core/js/jquery.min.js' %}"></script>
+		<script src="{% static 'core/js/jquery.scrollex.min.js' %}"></script>
+		<script src="{% static 'core/js/browser.min.js' %}"></script>
+		<script src="{% static 'core/js/breakpoints.min.js' %}"></script>
+		<script src="{% static 'core/js/util.js' %}"></script>
+		<script src="{% static 'core/js/cookiejs.js' %}"></script>
       <script src="{% static 'core/js/main.js' %}"></script>
   </body>
 </html>

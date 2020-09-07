@@ -2,12 +2,145 @@
 {% load static %}
 {% block title %}Inicio{% endblock %}
 {% block content %}
-<div class="container">
-  <div style="padding-top:50px; text-align:center;">
-    <h1>{{title}}</h1>
-    <p class="lead">“ESTRATEGIAS DE ACCIÓN ANTE EL BURNOUT”</p>
-    <img class="" src="{% static 'core/img/POS.png'%}">
-  </div>
-</div>
+	<!-- Banner -->
+					<section id="banner">
+						<div class="inner">
+							<div class="logo">
+							<img src="{% static 'core/img/logounam.jpg'%}" alt="" style="width: 200px; margin-left: 0px;  opacity: 0.5;" >
+							<img src="{% static 'core/img/logoiztacala.jpg'%}" alt="" style="width: 200px; margin-left: 500px;  opacity: 0.5;">
+							</div>
+							<h2>Taller en línea: Estrategias de acción ante el burnout</h2>
+							<p style='text-align: left;'>¡Bienvenidos! Usted es parte de nuestro grupo de profesionales interesados por su salud y bienestar emocional y agradecemos su interés por participar.</p>
+							<p style='text-align: right;'>Como psicólogos especialistas en medicina conductual, tenemos el objetivo de brindarle las mejores herramientas, basadas en evidencia científica, que tengan por objetivo prevenir y disminuir niveles de Burnout.</p>
+						</div>
+					</section>
+<!-- Wrapper -->
+					<section id="wrapper">
+
+						<!-- One -->
+							<section id="one" class="wrapper spotlight style1">
+								<div class="inner">
+									<a href="#" class="image"><img src="{% static  'core/img/psi.jpg' %}" alt="" /></a>
+									<div class="content">
+										<h2 class="major">Conozca a la responsable del taller:</h2>
+										<h3 class="major">Psicóloga Diana Perez</h3>
+										<p>Licenciada en Psicología por la UNAM, actualmente residente del programa de Maestría en Medicina Conductual FES Iztacala, asignada al servicio de Salud Mental Comunitaria del Hospital Juárez de México.</p>
+										
+									</div>
+								</div>
+							</section>
+
+						<!-- Two -->
+							<section id="two" class="wrapper alt spotlight style2">
+								<div class="inner">
+									<a href="#" class="image"><img src="{% static  'core/img/cues.png' %}" alt="" /></a>
+									<div class="content">
+										<h3 class="major">Antes de continuar, por favor responda un breve cuestionario.</h3>
+										
+										<a href="#" class="special">Ir a cuestionario.</a>
+									</div>
+								</div>
+							</section>
+
+						<!-- Three -->
+							<section id="three" class="wrapper spotlight style3">
+								<div class="inner">
+									<a href="#" class="image"><img src="images/pic03.jpg" alt="" /></a>
+									<div class="content">
+										<h2 class="major">MENSAJE DE BIENVENIDA</h2>
+										<p>Lorem ipsum dolor sit amet, etiam lorem adipiscing elit. Cras turpis ante, nullam sit amet turpis non, sollicitudin posuere urna. Mauris id tellus arcu. Nunc vehicula id nulla dignissim dapibus. Nullam ultrices, neque et faucibus viverra, ex nulla cursus.</p>
+										<video class="mx-auto" controls>
+											<source src="{% static 'core/video/welcome.mp4'%}" type="video/mp4">
+											<source src="movie.ogg" type="video/ogg">
+											Your browser does not support the video tag.
+										</video>
+										<a href="#" class="special">Learn more</a>
+									</div>
+								</div>
+							</section>
+							<!-- Four -->
+							<section id="two" class="wrapper alt spotlight style2">
+								<div class="inner">
+									
+									<div class="content">
+										<h3 class="major">Recursos necesarios</h3>
+										<p> Para acceder a los materiales y prácticas, usted necesita algunos recursos: </p>
+										
+										<ul id="lista1">
+											<li>Acceso a internet desde cualquier dispositivo </li>
+											<li>Aplicación zoom para videollamadas</li>
+											<li>Cámara de cualquier dispositivo</li>
+											<li>Cuaderno para apuntes (opcional)</li>
+										</ul>
+
+										
+									</div>
+								</div>
+							</section>
+
+						<!-- Five -->
+							<section id="four" class="wrapper alt style1">
+								<div class="inner">
+									<h2 class="major">Módulos de trabajo</h2>
+									<p>Inicie sesión para tener acceso a ellos</p>
+									<section class="features">
+										<article>
+
+											<h3 class="major">Modulo I. Psicoeducacion</h3>
+											<p>Conozcamos más sobre el Burnout <br/>
+											¿Qué es? <br/>  ¿Qué consecuencias tiene?</p>
+											<a href="#" class="image1"><img src="{% static 'core/img/modulo1index.png'%}" alt="" /></a>
+											<a href="{% url 'modules1' %}" class="special">Ingresa</a>
+										</article>
+										<article>
+											
+											<h3 class="major">Modulo II. Relajación</h3>
+											<p>Aprendamos a relajarnos ante situaciones <br/> estresantes con ejercicios de respiración.​</p>
+											<a href="#" class="image1"><img src="{% static 'core/img/modulo2index.png'%}" alt="" /></a>
+											<a href="{% url 'modules2' %}" class="special">Ingresa</a>
+										</article>
+										<article>
+											
+											<h3 class="major">Modulo III. Solución de problemas</h3>
+											<p>Conozcamos los pasos necesarios para <br/> solucionar problemas eficazmente.</p>
+											<a href="#" class="image1"><img src="{% static 'core/img/modulo3index.png'%}" alt="" /></a>
+											<a href="{% url 'modules3' %}" class="special">Ingresa</a>
+										</article>
+										<article>
+											
+											<h3 class="major">Modulo IV. Planeacion de actividades</h3>
+											<p>Aprendamos a planificar nuestro tiempo <br/> para realizar diferentes actividades en <br/> nuestra vida diaria.</p>
+											<a href="#" class="image1"><img src="{% static 'core/img/modulo4index.png'%}" alt="" /></a>
+											<a href="{% url 'modules1' %}" class="special">Ingresa</a>
+										</article>
+									</section>
+									<ul class="actions">
+										<li><a href="#" class="button">Browse All</a></li>
+									</ul>
+								</div>
+							</section>
+
+					</section>
+
+				<!-- Footer -->
+					<section id="footer">
+						<div class="inner">
+							<img src="{% static 'core/img/logounam.jpg'%}" alt="" style="width: 150px; margin-left: 0px;  opacity: 0.5;" >
+							<img src="{% static 'core/img/logoiztacala.jpg'%}" alt="" style="width: 150px; margin-left: 500px;  opacity: 0.5;">
+							<p style='text-align: center;'>Universidad Nacional Autónoma de México<br/>
+							
+							Residencia en Medicina Conductual FES Iztacala
+							</p>
+							
+							<ul class="copyright" style='text-align: center;'>
+								<li>&copy;Todos lo derechos reservados. </li><li>2020</a></li>
+								<li class="icon brands fa-twitter"><a href="#">twitter</a></li>
+								<li class="icon brands fa-facebook-f"><a href="#">facebook</a></li>
+								<li class="icon brands fa-instagram"><a href="#">instagram</a></li>
+							</ul>
+						</div>
+					</section>
+
+			</div>
 
 {% endblock %}
