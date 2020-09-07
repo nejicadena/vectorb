@@ -37,3 +37,7 @@
 		-ms-filter: none;
 		filter: none;
 	}
+
+	.jumbotron {
+		background-color: black ;
+	}

@@ -67,9 +67,9 @@ input::-moz-focus-inner {
 
 input, select, textarea {
 	-moz-appearance: none;
-	-webkit-appearance: none;
+	/*-webkit-appearance: none;*/
 	-ms-appearance: none;
-	appearance: none;
+	/*appearance: none;*/
 }
 
 /* Basic */
@@ -118,6 +118,12 @@ input, select, textarea {
 			-webkit-transition: none !important;
 			-ms-transition: none !important;
 			transition: none !important;
+		}
+		.jumbotron {
+			background-color: transparent !important ;
+		}
+		.list-group-item{
+			background-color: transparent !important;
 		}
 
 /* Type */
@@ -2089,6 +2095,13 @@ input, select, textarea {
 	section.special, article.special {
 		text-align: center;
 	}
+/*  Listas  */
+.lista1 li {
+	display:inline;
+	padding-left:3px;
+	padding-right:3px;
+   background-color:black;
+}
 
 /* Form */
 
@@ -2252,7 +2265,7 @@ input, select, textarea {
 	input[type="checkbox"],
 	input[type="radio"] {
 		-moz-appearance: none;
-		-webkit-appearance: none;
+		/*-webkit-appearance: none;
 		-ms-appearance: none;
 		appearance: none;
 		display: block;
@@ -2260,7 +2273,7 @@ input, select, textarea {
 		margin-right: -2em;
 		opacity: 0;
 		width: 1em;
-		z-index: -1;
+		z-index: -1; */
 	}
 
 		input[type="checkbox"] + label,
@@ -2421,6 +2434,7 @@ input, select, textarea {
 		.image img {
 			border-radius: 5px;
 			display: block;
+			width: 15px;
 		}
 
 		.image.left, .image.right {
@@ -3025,10 +3039,15 @@ input, select, textarea {
 				width: calc(100% + 3.5em);
 			}
 
-				.features article .image img {
-					border-radius: 5px 5px 0 0;
-					width: 100%;
+				.features article .image1 img {
+					
+					width: 30%;
+					position: relative;
+					margin-left: 380px;
+					margin-top: -200px;
+					opacity: .5;
 				}
+				
 
 		@media screen and (max-width: 980px) {
 

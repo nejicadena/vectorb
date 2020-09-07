@@ -5,7 +5,10 @@
 	<!-- Banner -->
 					<section id="banner">
 						<div class="inner">
-							<div class="logo"><img src="{% static  'core/img/unam.svg' %}" alt="Girl in a jacket" width="100" ></div>
+							<div class="logo">
+							<img src="{% static 'core/img/logounam.jpg'%}" alt="" style="width: 200px; margin-left: 0px;  opacity: 0.5;" >
+							<img src="{% static 'core/img/logoiztacala.jpg'%}" alt="" style="width: 200px; margin-left: 500px;  opacity: 0.5;">
+							</div>
 							<h2>Taller en línea: Estrategias de acción ante el burnout</h2>
 							<p style='text-align: left;'>¡Bienvenidos! Usted es parte de nuestro grupo de profesionales interesados por su salud y bienestar emocional y agradecemos su interés por participar.</p>
 							<p style='text-align: right;'>Como psicólogos especialistas en medicina conductual, tenemos el objetivo de brindarle las mejores herramientas, basadas en evidencia científica, que tengan por objetivo prevenir y disminuir niveles de Burnout.</p>
@@ -55,36 +58,60 @@
 									</div>
 								</div>
 							</section>
+							<!-- Four -->
+							<section id="two" class="wrapper alt spotlight style2">
+								<div class="inner">
+									
+									<div class="content">
+										<h3 class="major">Recursos necesarios</h3>
+										<p> Para acceder a los materiales y prácticas, usted necesita algunos recursos: </p>
+										
+										<ul id="lista1">
+											<li>Acceso a internet desde cualquier dispositivo </li>
+											<li>Aplicación zoom para videollamadas</li>
+											<li>Cámara de cualquier dispositivo</li>
+											<li>Cuaderno para apuntes (opcional)</li>
+										</ul>
 
-						<!-- Four -->
+										
+									</div>
+								</div>
+							</section>
+
+						<!-- Five -->
 							<section id="four" class="wrapper alt style1">
 								<div class="inner">
 									<h2 class="major">Módulos de trabajo</h2>
 									<p>Inicie sesión para tener acceso a ellos</p>
 									<section class="features">
 										<article>
-											<a href="#" class="image"><img src="images/pic04.jpg" alt="" /></a>
-											<h3 class="major">Modulo 1</h3>
-											<p>Psicoeducación</p>
-											<a href="{% url 'modules1' %}" class="special">Learn more</a>
+
+											<h3 class="major">Modulo I. Psicoeducacion</h3>
+											<p>Conozcamos más sobre el Burnout <br/>
+											¿Qué es? <br/>  ¿Qué consecuencias tiene?</p>
+											<a href="#" class="image1"><img src="{% static 'core/img/modulo1index.png'%}" alt="" /></a>
+											<a href="{% url 'modules1' %}" class="special">Ingresa</a>
 										</article>
 										<article>
-											<a href="#" class="image"><img src="images/pic05.jpg" alt="" /></a>
-											<h3 class="major">Modulo 2</h3>
-											<p>Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id nulla dignissim dapibus ultrices.</p>
-											<a href="{% url 'modules2' %}" class="special">Learn more</a>
+											
+											<h3 class="major">Modulo II. Relajación</h3>
+											<p>Aprendamos a relajarnos ante situaciones <br/> estresantes con ejercicios de respiración.​</p>
+											<a href="#" class="image1"><img src="{% static 'core/img/modulo2index.png'%}" alt="" /></a>
+											<a href="{% url 'modules2' %}" class="special">Ingresa</a>
 										</article>
 										<article>
-											<a href="#" class="image"><img src="images/pic06.jpg" alt="" /></a>
-											<h3 class="major">Modulo 3</h3>
-											<p>Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id nulla dignissim dapibus ultrices.</p>
-											<a href="{% url 'modules3' %}" class="special">Learn more</a>
+											
+											<h3 class="major">Modulo III. Solución de problemas</h3>
+											<p>Conozcamos los pasos necesarios para <br/> solucionar problemas eficazmente.</p>
+											<a href="#" class="image1"><img src="{% static 'core/img/modulo3index.png'%}" alt="" /></a>
+											<a href="{% url 'modules3' %}" class="special">Ingresa</a>
 										</article>
 										<article>
-											<a href="#" class="image"><img src="images/pic07.jpg" alt="" /></a>
-											<h3 class="major">Modulo 4</h3>
-											<p>Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id nulla dignissim dapibus ultrices.</p>
-											<a href="{% url 'modules1' %}" class="special">Learn more</a>
+											
+											<h3 class="major">Modulo IV. Planeacion de actividades</h3>
+											<p>Aprendamos a planificar nuestro tiempo <br/> para realizar diferentes actividades en <br/> nuestra vida diaria.</p>
+											<a href="#" class="image1"><img src="{% static 'core/img/modulo4index.png'%}" alt="" /></a>
+											<a href="{% url 'modules1' %}" class="special">Ingresa</a>
 										</article>
 									</section>
 									<ul class="actions">
@@ -98,23 +125,18 @@
 				<!-- Footer -->
 					<section id="footer">
 						<div class="inner">
-							<h2 class="major">Get in touch</h2>
-							<p>Cras mattis ante fermentum, malesuada neque vitae, eleifend erat. Phasellus non pulvinar erat. Fusce tincidunt, nisl eget mattis egestas, purus ipsum consequat orci, sit amet lobortis lorem lacus in tellus. Sed ac elementum arcu. Quisque placerat auctor laoreet.</p>
+							<img src="{% static 'core/img/logounam.jpg'%}" alt="" style="width: 150px; margin-left: 0px;  opacity: 0.5;" >
+							<img src="{% static 'core/img/logoiztacala.jpg'%}" alt="" style="width: 150px; margin-left: 500px;  opacity: 0.5;">
+							<p style='text-align: center;'>Universidad Nacional Autónoma de México<br/>
 							
-							<ul class="contact">
-								<li class="icon solid fa-home">
-									Untitled Inc<br />
-									1234 Somewhere Road Suite #2894<br />
-									Nashville, TN 00000-0000
-								</li>
-								<li class="icon solid fa-phone">(000) 000-0000</li>
+							Residencia en Medicina Conductual FES Iztacala
+							</p>
 							
-								<li class="icon brands fa-twitter"><a href="#">twitter.com/untitled-tld</a></li>
-								<li class="icon brands fa-facebook-f"><a href="#">facebook.com/untitled-tld</a></li>
-								<li class="icon brands fa-instagram"><a href="#">instagram.com/untitled-tld</a></li>
-							</ul>
-							<ul class="copyright">
-								<li>&copy; Untitled Inc. All rights reserved.</li><li>Design: lo</a></li>
+							<ul class="copyright" style='text-align: center;'>
+								<li>&copy;Todos lo derechos reservados. </li><li>2020</a></li>
+								<li class="icon brands fa-twitter"><a href="#">twitter</a></li>
+								<li class="icon brands fa-facebook-f"><a href="#">facebook</a></li>
+								<li class="icon brands fa-instagram"><a href="#">instagram</a></li>
 							</ul>
 						</div>
 					</section>
