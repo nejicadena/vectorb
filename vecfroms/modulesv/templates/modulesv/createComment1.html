@@ -1,0 +1,15 @@
+{% extends 'core/base.html' %}
+{% load static %}
+{% block title %}from{% endblock %}
+{% block content %}
+<section class="page-section about-heading" style="padding-top:0px; text-align:center;">
+<div class="container" style="padding-top: 0px;">
+
+<form method="post">
+{% csrf_token %}
+{{ form.as_p }}
+<button type="submit"> ENVIAR </button>
+
+</form>
+
+{% endblock %}

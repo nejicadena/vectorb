@@ -81,6 +81,17 @@ anterior en la siguiente tabla, puede relatar más de una situación:</p>
   <hr class="my-4">
   <button type="button" class="btn btn-primary btn-lg">Siguiente modulo</button>
 </div>
+{% if not object_list %}
+  <h4>No comentarios</h4>
+{% else %}
+  {% for comment in object_list %}
+  </br>
+  <h2 class="major" style="text-align: left;">{{comment.user}}</h2>
+							<p style="text-align: left;">{{comment.content}}</p>
+  
+  {% endfor %}  
+{% endif %}  
+<button type="button" class="btn btn-primary btn-lg"><a href={% url 'comment1' %}>Comentar</a></button>
 </div>
 </section>
 {% endblock %}
