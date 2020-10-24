@@ -39,7 +39,7 @@ Your browser does not support the video tag.
 </div>
 <hr class="my-4">
 <div>
-<img src="{% static 'core/img/module3.jpeg'%}" class="img-fluid" alt="Responsive image">
+<a href={% url 'layer3' %}><img src="{% static 'core/img/module3mini.jpeg'%}" class="img-fluid" alt="Responsive image"></a>
 </div>
 
 <div class="jumbotron">
@@ -81,6 +81,33 @@ momentos:</p>
   <hr class="my-4">
   <button type="button" class="btn btn-primary btn-lg">Siguiente modulo</button>
 </div>
+
+
+
+{% if not object_list %}
+  <h4>No hay comentarios</h4>
+{% else %}
+  {% for comment in object_list %}
+  </br>
+  
+              <div class="table-wrapper">
+											<table>
+												<thead>
+													<tr>
+														<th>{{comment.user}}</th>	
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td>{{comment.content3}}</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+  
+  {% endfor %}  
+{% endif %}  
+
+<a href={% url 'comment3' %} class="button primary fit">Comentar</a>
 </div>
-</section>
 {% endblock %}
