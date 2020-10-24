@@ -1,8 +1,8 @@
 # Byte-compiled / optimized / DLL files
-vecfroms/core/__pycache__/
-vecfroms/core/__pycache__/
-vecfroms/formv/__pycache__/
-vecfroms/modules/__pycache__/
-vecfroms/registration/__pycache__/
-vecfroms/vectorfroms/__pycache__/
+./vecfroms/core/__pycache__/
+./vecfroms/core/__pycache__/
+./vecfroms/formv/__pycache__/
+./vecfroms/modules/__pycache__/
+./vecfroms/registration/__pycache__/
+./vecfroms/vectorfroms/__pycache__/
 *.pyc

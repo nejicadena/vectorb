@@ -15,10 +15,8 @@
               <span class="section-heading-upper">FICHA DE IDENTIFICACIÓN</span>
             </h2>
             <h4 class="section-heading mb-6">
-                Para conocerlo(a) mejor, le pedimos ingrese los siguientes datos. Recuerde que toda la información que proporcione en
-                este sitio está resguardada bajo estrictos lineamientos éticos que respaldan la confidencialidad de los mismos, una vez que
-                se registre, enviaremos un consentimiento informado en el que encontrará la información a detalle sobre los aspectos
-                éticos del taller
+                Para conocerlo(a) mejor, le pido responda a los siguientes datos, toda la información que aporte está resguardada bajo estrictos
+                lineamientos éticos y confidenciales.
             </h4>
             <!-- Formulario de contacto -->
             {% if 'ok' in request.GET %}
@@ -26,6 +24,20 @@
             {% endif %}
             <form action="" method="POST">
                 {% csrf_token %}
+                <div class="form-group">
+                    <label>Nombre (s) *</label>
+                    <div class="input-group">
+                        {{form.name}}
+                    </div>
+                    {{form.name.errors}}
+                </div>
+                <div class="form-group">
+                    <label>Apellidos *</label>
+                    <div class="input-group">
+                        {{form.last_name}}
+                    </div>
+                    {{form.last_name.errors}}
+                </div>
                 <div class="form-group">
                     <label>Edad *</label>
                     <div class="input-group">
@@ -36,20 +48,20 @@
                 <div class="form-group">
                     <label>Estado civil *</label>
                     <div class="input-group">
-                        {{form.state}}
+                        {{form.state_civil}}
                     </div>
                     {{form.state.errors}}
                 </div>
                 <br/>
                 <div class="form-group">
-                    <label>Numero de Hijos</label>
+                    <label>Número de Hijos (opcional)</label>
                     <div class="input-group">
                         {{form.n_hijos}}
                     </div>
-                    {{form.n_hijos.errors}}
+                    
                 </div>
                 <div class="form-group">
-                    <label>Lugar de residencia *</label>
+                    <label>Lugar de Residencia *</label>
                     <div class="input-group">
                         {{form.lugar}}
                     </div>
@@ -63,47 +75,48 @@
                     {{form.profesion.errors}}
                 </div>
                 <div class="form-group">
-                    <label>Especialidad *</label>
+                    <label>¿Tiene una especialidad? *</label>
                     <div class="input-group">
                         {{form.especialidad}}
                     </div>
                     {{form.especialidad.errors}}
                 </div>
                 <div class="form-group">
-                    <label>Tiempo de experiencia(años) *</label>
+                    <label>¿Tiene un posgrado? *</label>
+                    <div class="input-group">
+                        {{form.posgrado}}
+                    </div>
+                    {{form.posgrado.errors}}
+                </div>
+                <div class="form-group">
+                    <label>¿Cuál es su tiempo de experiencia laboral? *</label>
                     <div class="input-group">
                         {{form.time_ex}}
                     </div>
                     {{form.time_ex.errors}}
                 </div>
                 <div class="form-group">
-                    <label>Lugar de Trabajo actual *</label>
+                    <label>¿Cuál es el su lugar de trabajo actual? (Si trabaja en más de un centro, seleccione todas las opciones necesarias) *</label>
                     <div class="input-group">
                         {{form.work}}
                     </div>
                     {{form.work.errors}}
                 </div>
                 <div class="form-group">
-                    <label>Servicio medico en el que se encuentra *</label>
+                    <label>¿Cuál es el servicio médico en el que se encuentra asignada (o) actualmente? *</label>
                     <div class="input-group">
                         {{form.service}}
                     </div>
                     {{form.service.errors}}
                 </div>
                 <div class="form-group">
-                    <label>¿Tiene alguna enfermedad cronico-degenerativa? *</label>
+                    <label>¿Tiene alguna enfermedad crónico-degenerativa? *</label>
                     <div class="input-group">
                         {{form.sick}}
                     </div>
                     {{form.sick.errors}}
                 </div>
-                <div class="form-group">
-                    <label>Especifique cuál *</label>
-                    <div class="input-group">
-                        {{form.who}}
-                    </div>
-                    {{form.who.errors}}
-                </div>
+                
                 <div class="text-center">
                     <input type="submit" class="btn btn-primary btn-block py-2" value="Enviar">
                 </div>

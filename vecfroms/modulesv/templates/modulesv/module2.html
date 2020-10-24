@@ -33,7 +33,7 @@ reducirlas a través de una de las mejores técnicas de relajación.
 <!-- Contenido -->
 <!-- Imagen -->
 <div>
-<img src="{% static 'core/img/module2.png'%}" class="img-fluid" alt="Responsive image">
+<a href={% url 'layer2' %}><img src="{% static 'core/img/module2mini.png'%}" class="img-fluid" alt="Responsive image"></a>
 </div>
 <hr class="my-4">
 <!-- Video externo  -->
@@ -105,6 +105,33 @@ momentos:</p>
   <hr class="my-4">
   <button type="button" class="btn btn-primary btn-lg">Siguiente modulo</button>
 </div>
+
+
+
+{% if not object_list %}
+  <h4>No hay comentarios</h4>
+{% else %}
+  {% for comment in object_list %}
+  </br>
+  
+              <div class="table-wrapper">
+											<table>
+												<thead>
+													<tr>
+														<th>{{comment.user}}</th>	
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td>{{comment.content2}}</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+  
+  {% endfor %}  
+{% endif %}  
+
+<a href={% url 'comment2' %} class="button primary fit">Comentar</a>
 </div>
-</section>
 {% endblock %}

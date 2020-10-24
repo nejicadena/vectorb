@@ -1,0 +1,21 @@
+{% extends 'core/base.html' %}
+{% load static %}
+{% block title %}from{% endblock %}
+{% block content %}
+<section class="page-section about-heading" style="padding-top:0px; text-align:center;">
+<div class="container" style="padding-top: 0px;">
+
+<div class="jumbotron">
+  <h1 class="display-4">MÓDULO II. ENTRENAMIENTO EN RELAJACIÓN</h1>
+  <img src="{% static 'core/img/module2.png'%}" class="img-fluid" alt="Responsive image">
+  
+</div>
+<hr class="my-4">
+<a href={% url 'modules2' %} class="button primary">Regresar</a>
+<!-- Contenido -->
+<!-- Imagen -->
+<hr class="my-4">
+
+
+
+{% endblock %}

@@ -36,7 +36,7 @@ Mire los siguientes materiales que le ayudarán a conocer más al respecto.
 <!-- Contenido -->
 <!-- Imagen -->
 <div>
-<img src="{% static 'core/img/module1.png'%}" class="img-fluid" alt="Responsive image">
+<a href={% url 'layer1' %}><img src="{% static 'core/img/module1mini.png'%}" class="img-fluid" alt="Responsive image"></a>
 </div>
 <hr class="my-4">
 <!-- Video interno -->
@@ -76,11 +76,38 @@ anterior en la siguiente tabla, puede relatar más de una situación:</p>
     </div>
   </p>
   <hr class="my-4">
-  <button type="button" class="btn btn-light btn-lg btn-block" style="background-color: #82E0AA;">DESCARGAR REGISTRO DE PRÁCTICA</button>
-  <button type="button" class="btn btn-light btn-lg btn-block" style="background-color: #82E0AA;">CUESTIONARIO MÓDULO I</button>
+  
+  <ul class="actions fit small">
+											<li><a href="#" class="button primary fit small">DESCARGAR REGISTRO DE PRÁCTICA</a></li>
+											<li><a href="#" class="button primary fit small">CUESTIONARIO MÓDULO I</a></li>
+										</ul>
   <hr class="my-4">
-  <button type="button" class="btn btn-primary btn-lg">Siguiente modulo</button>
+  <a href="#" class="button primary">Siguiente modulo</a>
 </div>
-</div>
-</section>
+{% if not object_list %}
+  <h4>No comentarios</h4>
+{% else %}
+  {% for comment in object_list %}
+  </br>
+  
+              <div class="table-wrapper">
+											<table>
+												<thead>
+													<tr>
+														<th>{{comment.user}}</th>	
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td>{{comment.content1}}</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+  
+  {% endfor %}  
+{% endif %}  
+
+<a href={% url 'comment1' %} class="button primary fit">Comentar</a>
+
 {% endblock %}

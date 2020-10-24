@@ -1,4 +1,6 @@
 from .forms import ContactForm, FormBornout, FormConsent
+from .models import ModelValid
+from django.views.generic.edit import CreateView
 from django.views.generic.edit import FormView
 from django.shortcuts import redirect, render
 from django.urls import reverse_lazy , reverse
@@ -6,21 +8,24 @@ from django.urls import reverse_lazy , reverse
 class ConsentiView(FormView):
     template_name = 'formv/consent.html'
     form_class = FormConsent
-   
-    success_url = 'contact'
-  
 
-class ContactView(FormView):
+    success_url = 'contact'
+
+
+class ContactView(CreateView):
     template_name = 'formv/valid.html'
     form_class = ContactForm
-    success_url = '../bornout'
-    
+    success_url = reverse_lazy('formBornout')
 
-    def form_valid(self, form):
-        # This method is called when valid form data has been POSTed.
-        # It should return an HttpResponse.
-        form.send_email()
-        return super().form_valid(form)
+    def form_valid(self,form):
+        form.instance.user = self.request.user
+        form.save()
+        return redirect('modules1')
+    # def form_valid(self, form):
+    #     # This method is called when valid form data has been POSTed.
+    #     # It should return an HttpResponse.
+    #     form.send_email()
+    #     return super().form_valid(form)
 
 def BornoutView(request):
     bform = FormBornout()
@@ -47,7 +52,7 @@ def BornoutView(request):
         var20 = request.POST.get('que20','')
         var21 = request.POST.get('que21','')
         var22 = request.POST.get('que22','')
-        
+
         res = int(var1)+int(var2)+int(var3)+int(var4)+int(var5)+int(var6)+int(var7)+int(var8)+int(var9)+int(var10)+int(var11)+int(var12)+int(var13)+int(var14)+int(var15)+int(var16)+int(var17)+int(var18)+int(var19)+int(var20)+int(var21)+int(var22)
 
         print(res)
