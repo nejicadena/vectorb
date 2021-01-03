@@ -64,12 +64,12 @@ class CreateComment3(CreateView):
         form.save()
         return redirect('modules3')
 
-class LayerModel1(TemplateView):
+class LayerModel1(ListView):
     template_name = "modulesv/layer1.html"
 
-class LayerModel2(TemplateView):
+class LayerModel2(ListView):
     template_name = "modulesv/layer2.html"
 
-class LayerModel3(TemplateView):
+class LayerModel3(ListView):
     template_name = "modulesv/layer3.html"
 
