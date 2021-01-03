@@ -20,10 +20,14 @@ class CreateComment1(CreateView):
     model = Comment
     
     fields = ['content1']
+    
     template_name = "modulesv/createComment1.html"
     #success_url = reverse_lazy('modules1')
 
     def form_valid(self,form):
+        contentUs = self.request.POST.get('content1')
+        print(contentUs)
+        all_entries = Comment.objects.all()
         form.instance.user = self.request.user
         form.save()
         return redirect('modules1')

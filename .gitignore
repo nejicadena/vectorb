@@ -5,4 +5,5 @@
 ./vecfroms/modules/__pycache__/
 ./vecfroms/registration/__pycache__/
 ./vecfroms/vectorfroms/__pycache__/
+./vecfroms/modulesv/__pycache__/
 *.pyc
