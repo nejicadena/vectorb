@@ -1,4 +1,7 @@
-@import url("{% static 'core/css/fontawesome-all.min.css' %}");
+
+/* @import url('../vendor/font-awesome/css/font-awesome.css'); */
+
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/fontawesome.min.css");
 @import url("https://fonts.googleapis.com/css?family=Raleway:200,700|Source+Sans+Pro:300,600,300italic,600italic");
 
 /*
@@ -190,7 +193,7 @@ input, select, textarea {
 			border-bottom-color: transparent;
 			color: #ffffff !important;
 		}
-
+		
 		a.special:not(.button) {
 			text-decoration: none;
 			border-bottom: 0;
@@ -202,6 +205,12 @@ input, select, textarea {
 			margin: 0 0 2em 0;
 			text-transform: uppercase;
 		}
+		a.special:not(.button):hover {
+			color: gray !important;
+			
+		}
+
+		
 
 			a.special:not(.button):before {
 				-moz-osx-font-smoothing: grayscale;
@@ -223,7 +232,7 @@ input, select, textarea {
 				transition: background-color 0.2s ease-in-out;
 				border-radius: 100%;
 				border: solid 2px rgba(255, 255, 255, 0.125);
-				content: '\f105';
+				/* content: '\f105'; */
 				display: inline-block;
 				font-size: 1.25em;
 				height: 2em;
@@ -3171,7 +3180,7 @@ input, select, textarea {
 					}
 
 					#header nav a[href="#menu"]:before {
-						content: '\f0c9';
+						/* content: '\f0c9'; */
 						line-height: inherit;
 					}
 
