@@ -12,15 +12,15 @@ class ConsentiView(FormView):
     success_url = 'contact'
 
 
-class ContactView(CreateView):
+class ContactView(FormView):
     template_name = 'formv/valid.html'
     form_class = ContactForm
-    success_url = reverse_lazy('formBornout')
+    success_url = 'formBornout'
 
     def form_valid(self,form):
         form.instance.user = self.request.user
         form.save()
-        return redirect('modules1')
+        return redirect('formBornout')
     # def form_valid(self, form):
     #     # This method is called when valid form data has been POSTed.
     #     # It should return an HttpResponse.
