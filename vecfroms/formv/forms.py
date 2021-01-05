@@ -15,11 +15,11 @@ acepted = [
     ('1','No acepto dar mi consentimiento y rechazo participar en el taller “Estrategias de acción ante el burnout”')
 ]
 ages = [
-    ('25', '18 a 30 años'),
-    ('35', '31 a 40 años'),
-    ('41', '41 a 50 años'),
-    ('55', '50 a 60 años'),
-    ('65', '61 años o más'),
+    (25, '18 a 30 años'),
+    (35, '31 a 40 años'),
+    (41, '41 a 50 años'),
+    (55, '50 a 60 años'),
+    (65, '61 años o más'),
 ]
 estado_civil = [
     ('Soltera', 'Soltera (o)'),
@@ -50,28 +50,28 @@ yes_or_not = [
     ('si','Si'),
     ('no','No')
 ]
-# experenciatime = [
-#     (5,'0 a 5 años'),
-#     (10,'6 a 10 años'),
-#     (15,'11 a 15 años'),
-#     (20,'16 a 20 años'),
-#     (25,'21 a 25 años'),
-#     (30,'26 a 30 años'),
-#     (35,'31 a 35 años'),
-#     (40,'36 a 40 años'),
-#     (50,'Más de 41 años'),
-# ]
 experenciatime = [
-    ('0 a 5 años','0 a 5 años'),
-    ('6 a 10 años','6 a 10 años'),
-    ('11 a 15 años','11 a 15 años'),
-    ('16 a 20 años','16 a 20 años'),
-    ('21 a 25 años','21 a 25 años'),
-    ('26 a 30 años','26 a 30 años'),
-    ('31 a 35 años','31 a 35 años'),
-    ('36 a 40 años','36 a 40 años'),
-    ('Más de 41 años','Más de 41 años'),
+    (5,'0 a 5 años'),
+    (10,'6 a 10 años'),
+    (15,'11 a 15 años'),
+    (20,'16 a 20 años'),
+    (25,'21 a 25 años'),
+    (30,'26 a 30 años'),
+    (35,'31 a 35 años'),
+    (40,'36 a 40 años'),
+    (50,'Más de 41 años'),
 ]
+# experenciatime = [
+#     ('0 a 5 años','0 a 5 años'),
+#     ('6 a 10 años','6 a 10 años'),
+#     ('11 a 15 años','11 a 15 años'),
+#     ('16 a 20 años','16 a 20 años'),
+#     ('21 a 25 años','21 a 25 años'),
+#     ('26 a 30 años','26 a 30 años'),
+#     ('31 a 35 años','31 a 35 años'),
+#     ('36 a 40 años','36 a 40 años'),
+#     ('Más de 41 años','Más de 41 años'),
+# ]
 servicomedico = [
     ('Alergia e inmunologia','Alergia e inmunologia'),  ('Anestesiología','Anestesiología'),  ('Angiología','Angiología'),  ('Cardiología','Cardiología'),
     ('Cirugía Cardiovascular','Cirugía Cardiovascular'),  ('Cirugía General','Cirugía General'),  ('Cirugía Maxilofacial','Cirugía Maxilofacial'),  ('Cirugía Pediatra','Cirugía Pediatra'),

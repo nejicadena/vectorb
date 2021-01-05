@@ -15,7 +15,7 @@ class ModelValid(models.Model):
     profesion = models.CharField( max_length=50)
     especialidad = models.CharField( max_length=50)
     posgrado = models.CharField( max_length=50)
-    time_ex = models.CharField( max_length=50)
+    time_ex = models.IntegerField()
     work = models.CharField( max_length=50)
     service = models.CharField( max_length=50)
     sick =models.CharField( max_length=50)
