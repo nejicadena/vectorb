@@ -10,7 +10,7 @@ from django.shortcuts import render, get_object_or_404, redirect
 # Create your views here.
 class ModulesPageView(CreateView):
     
-    template_name= "modulesv/modulescar.html"
+    template_name= "modulesv/modulesmain.html"
     
 class ModulesPageView1(ListView):
     model = Comment
