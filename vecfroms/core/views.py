@@ -12,3 +12,6 @@ class AboutPageView(TemplateView):
     
 class SamplePageView(TemplateView):
     template_name = "core/sample.html"
+
+class AcercaTallerPageView(TemplateView):
+    template_name = "core/acercataller.html"    
