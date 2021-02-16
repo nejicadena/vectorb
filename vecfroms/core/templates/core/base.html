@@ -17,31 +17,65 @@
     <link rel="stylesheet" href="{% static  'core/css/noscript.css' %}" />
 	  <link rel="stylesheet" href="{% static  'core/css/cookiecss.css' %}" />
   </head>
+
+  <header>
+    <!-- Inicia Contenedor Menu  -------------------------------------------------------------------------------------->
+    <div id="menu">
+
+        <!--contenedor secundario menu diana-->
+        <div id="menu_imagenTexto">
+            <div id="logo_menu">
+                <img src="{% static  '/core/img/iztacala.jpeg' %}" alt="#"> 
+            </div>
+            <div>
+                <h1><a href="#">Medicina Conductual</a></h1>
+            </div>
+            
+        </div>
+        <!--contenedor secundario  diana-->
+
+        <!--contenedor secundario elementos del menu-->
+        <div id="menu_elementos">
+
+            <div class="buscador"> 
+                <a href="#">L</a>
+            </div>
+            <div class="menu_elementos" id="menu_modulos">
+                <a href="#">Módulos</a> 
+                <ul>
+                    <li>
+                        <a href="#">Psicoeducación</a>
+                    </li>
+                    <li>
+                        <a href="#">Módulo II</a>
+                    </li>
+                    <li>
+                        <a href="#">Módulo III</a>
+                    </li>
+                    <li>
+                        <a href="#">Módulo IV</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="menu_elementos">
+                <a href="#">Nosotros</a>
+            </div>
+            <div class="menu_elementos">
+                <a href="#">¿Quiénes somos?</a>
+            </div>
+            <div class="menu_elementos">
+                <a href="#" id="in">Inicio</a>
+            </div>
+
+        </div>
+        <!--contenedor secundario elementos del menu-->
+
+    </div>
+    <!-- Finaliza Contenedor Menu -------------------------------------------------------------------------------------->
+  </header>
+
   <body>  
-  <!--  Inicio de menu -->
-    <nav id="ml">
-      <div id="lobo">
-          <h1><a href="#">Medicina Conductual</a></h1>
-      </div>
-      <ul id="menu">
-          <li class="normal">
-              <a href="#">Inicio</a>
-          </li>
-          <li class="normal">
-              <a href="#">¿Quiénes somos?</a>
-          </li>
-          <li class="normal">
-              <a href="inicio_sesion.html">Registro</a> <!--nuevos-->
-          </li>
-          <li class="normal">
-              <a href="index.html">Módulos</a> <!--comentarios nuevos-->
-          </li>
-      </ul>
-    </nav>
-  <!--  Fin de menu -->
-
-<div id="clearfix"></div>
-
+ 
 <!-- Contenido dinamico -->
 {% block content %}{% endblock %}
 <!-- Fin del Contenido dinamico -->
