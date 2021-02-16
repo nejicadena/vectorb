@@ -14,4 +14,10 @@ class SamplePageView(TemplateView):
     template_name = "core/sample.html"
 
 class AcercaTallerPageView(TemplateView):
-    template_name = "core/acercataller.html"    
+    template_name = "core/acercataller.html"  
+
+class AquienPageView(TemplateView):
+    template_name = "core/aquien.html"
+
+class QuienimpartePageView(TemplateView):
+    template_name = "core/quienimparte.html"
