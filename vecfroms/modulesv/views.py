@@ -15,6 +15,12 @@ class ModulesPageView(CreateView):
 class ModulesPageView1(ListView):
     model = Comment
     template_name= "modulesv/module1.html" 
+class ModulesPageView11(ListView):
+    model = Comment
+    template_name= "modulesv/module11.html" 
+class ModulesPageView12(ListView):
+    model = Comment
+    template_name= "modulesv/module12.html"       
 
 class CreateComment1(CreateView):
     model = Comment

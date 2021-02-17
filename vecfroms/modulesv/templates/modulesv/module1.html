@@ -22,12 +22,12 @@
   <p> -Videoconferencia: Psicoeducación del burnout. </p>
   <p> -Video animado de caso hipotético. </p>
 
-  <a href={% url 'module1_1' %}><button>Empezar</button></a>
+  <a href={% url 'modules11' %}><button>Empezar</button></a>
   
 </div>
 
 
-{% if not object_list %}
+{% comment %} {% if not object_list %}
   <h4>No hay comentarios</h4>
 {% else %}
   {% for comment in object_list %}
@@ -49,5 +49,5 @@
   
   {% endfor %}  
 {% endif %}  
-<a href={% url 'comment1' %} class="button primary fit">Comentar</a>
+<a href={% url 'comment1' %} class="button primary fit">Comentar</a> {% endcomment %}
 {% endblock %}
