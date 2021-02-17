@@ -127,7 +127,6 @@ table {
 #menu_elementos{
     width: 50%;
     height: 100%;
-    
     display: flex;
     flex-wrap: wrap;
     flex-direction: row-reverse;
@@ -174,3 +173,8 @@ table {
     box-shadow: 0px 0px 2px gray;
 }
 /* Menu desplegable*/
+/* footer */
+#footer{
+    background-color: #DFE9EB;
+    padding-bottom: 40px;
+}
