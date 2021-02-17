@@ -28,7 +28,7 @@
                 <img src="{% static  '/core/img/iztacala.jpeg' %}" alt="#"> 
             </div>
             <div>
-                <h1><a href="#">Medicina Conductual</a></h1>
+                <h1><a href="{% url 'home' %}">Medicina Conductual</a></h1>
             </div>
             
         </div>
@@ -41,10 +41,10 @@
                 <a href="#">L</a>
             </div>
             <div class="menu_elementos" id="menu_modulos">
-                <a href="#">Módulos</a> 
+                <a href="{% url 'modules1' %}">Módulos</a> 
                 <ul>
                     <li>
-                        <a href="#">Psicoeducación</a>
+                        <a href="{% url 'modules1' %}">Psicoeducación</a>
                     </li>
                     <li>
                         <a href="#">Módulo II</a>
@@ -57,14 +57,23 @@
                     </li>
                 </ul>
             </div>
+            {% if not request.user.is_authenticated %}
             <div class="menu_elementos">
-                <a href="#">Nosotros</a>
+                <a href="{% url 'consenti' %}">Registro</a>
             </div>
+            <div class="menu_elementos">
+                <a href="{% url 'login' %}">Acceder</a>
+            </div>
+            {% else %}
+            <div class="menu_elementos">
+                <a href="{% url 'logout' %}">Salir</a>
+            </div>
+            {% endif %}
             <div class="menu_elementos">
                 <a href="{% url 'about' %}">¿Quiénes somos?</a>
             </div>
             <div class="menu_elementos">
-                <a href="#" id="in">Inicio</a>
+                <a href="{% url 'home' %}" id="in">Inicio</a>
             </div>
 
         </div>

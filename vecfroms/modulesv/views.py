@@ -8,7 +8,7 @@ from .models import Comment, Comment2, Comment3
 from django.shortcuts import render, get_object_or_404, redirect
 
 # Create your views here.
-class ModulesPageView(CreateView):
+class ModulesPageView(TemplateView):
     
     template_name= "modulesv/modulesmain.html"
     
