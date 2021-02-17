@@ -1,4 +1,98 @@
-/* Contenedor parallax */
+/* Estilos Generales */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+  text-align: center;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+*{
+    font-family: roboto;
+}
+#clearfix{
+  float: none;
+  clear: both;
+}
+/* Fin de Estilos Generales */
+/*-----------------------------------------------------------------------------------------------------------------*/
+/* Fonts */
+
+@font-face{
+    font-family: icons; 
+    src: url(../fonts/websymbols/websymbols-regular-webfont.svg#WebSymbolsRegular)format("svg"),
+         url(../fonts/websymbols/websymbols-regular-webfont.eot);
+    src: url(../fonts/websymbols/websymbols-regular-webfont.eot?#iefix)format("eot"),
+         url(../fonts/websymbols/websymbols-regular-webfont.woff)format("woff"),
+         url(../fonts/websymbols/websymbols-regular-webfont.ttf)format("truetype");
+}
+@font-face{
+    font-family: roboto;
+    src: url(../fonts/Roboto/Roboto-Black.ttf); 
+}
+@font-face{
+    font-family: robotoLight;
+    src: url(../fonts/Roboto/Roboto-Light.ttf); 
+}
+@font-face{
+    font-family: robotoRegular;
+    src: url(../fonts/Roboto/Roboto-Regular.ttf); 
+}
+@font-face{
+    font-family: robotoMedium;
+    src: url(../fonts/Roboto/Roboto-Medium.ttf); 
+}
+@font-face{
+    font-family: robotoBold;
+    src: url(../fonts/Roboto/Roboto-Bold.ttf); 
+}
+
+/* Fin Fonts ----------------------------------------------------------------------------------------------------------*/
+/* Contenedor parallax ------------------------------------------------------------------------------------------------*/
+
+
 #banner img{
     opacity: .8;
 }
@@ -48,20 +142,26 @@ p.titlep{
 .bordert{
   margin: auto;
   width: 10%;
-  border-top: 8px solid rgba(61,118,132,1);
+  border-top: 8px solid #53A7B8;
   margin-bottom: 10px;
+  margin-top: 40px;
 }
 p.titlep2{
-  
-  color: rgb(0, 0, 0);
-  font-family: "Open Sans", sans-serif;
-  font-size: 12pt;
-  font-size: 2em;
+  color: black;
+  font-family: robotoMedium;
+  font-size: 33px;
+  letter-spacing: 6px;
   display: block;
-  margin: 0 0 10px 0;
+  margin-top: 40px;
+  
 }
-
-/* Contenedor 2  Bienvenida*/
+p.titlep{
+  color: black;
+  font-family: robotoMedium;
+  font-size: 80px;
+}
+/* Contenedor parallax ------------------------------------------------------------------------------------------------*/
+/* Contenedor 2  Bienvenida--------------------------------------------------------------------------------------------*/
 
 .containerb{
   margin-top: 50px;
@@ -69,40 +169,161 @@ p.titlep2{
 }
 
 .containerb h1{
-  font-size: 500%;
+  font-family: robotoMedium;
+  font-size: 350%;
   color: #85200c;
   margin-bottom: 30px;
-}
-
-.containerb p{
-  font-size: 300%;
-  color: black;
-  margin-bottom: 20px;
-}
-/* Fin  Contenedor 2  Bienvenida*/
-
-/* Contenedor 3  Preguntas*/
-
-.containerq{
-  background-color:rgba(81,111,117,1) ;
-  height: 300px;
-}
-.containerq img{
-  padding-top: 20px;
-  display: block;
-  width: 8%;
-  margin-left: auto;
-  margin-right: auto;
   
 }
 
-.containerq ul{
+.containerb p{
+  font-size: 180%;
+  font-family: robotoLight;
+  color: black;
+  margin-bottom: 20px;
+  line-height: 60px;
+}
+.containerb #pu{
+  margin-bottom: 50px;
+}
+/* Contenedor 2  Bienvenida--------------------------------------------------------------------------------------------*/
+/* Contenedor 3  Preguntas---------------------------------------------------------------------------------------------*/
+
+.contenedor3a{
+  width: 100%;
+  min-height: 225px;
+  background-color: #516F75;
+}
+#cont_img3{
+  display: inline-flex;
+  
+}
+#cont_img3 .img3{
+  width: 180px;
+  height: 180px;
+  margin-top: 10px;
+  
+}
+#cont_img3 .img3 img{
+  width: 100%;
+  height: 100%; 
+}
+
+#contenedor3b{
+  display: inline-flex;
+  margin-top: 20px;
+}
+#contenedor3b .cont_text3{
+  width: 370px;
+  height: 100px;
+  margin-left: 10px;
+  
+}
+#contenedor3b .cont_text3 a{
+  text-decoration: none;
+  font-family: robotoMedium;
+  font-size: 50px;
+  color: white;
+  cursor: pointer;
+}
+#contenedor3b .cont_text3 p{
+  display: none;
+}
+#contenedor3b .cont_text3:hover p{
   display: block;
-  margin-left: 35%;
 }
-.containerq li{
-  font-size: 100%;
-  float: left;
-  margin-left: 30px;
- 
+#contenedor3b .cont_text3 p{
+  text-decoration: none;
+  font-family: robotoMedium;
+  font-size: 20px;
+  color: white;
+  margin-top: 30px;
 }
+.contenedor3b{
+  width: 100%;
+  min-height: 300px;
+  background-color: #516F75;
+}
+
+/* Contenedor 3  Preguntas---------------------------------------------------------------------------------------------*/
+/* Contenedor 4  Instrucciones-----------------------------------------------------------------------------------------*/
+
+#instrucciones{
+  width: 50%;
+  height: auto;
+  padding: 40px;
+  margin: auto;
+}
+#cont_instrucciones h1{
+  font-family: robotoMedium;
+  font-size: 300%;
+  color: #85200c;
+}
+#cont_instrucciones p{
+  font-size: 150%;
+  font-family: robotoLight;
+  color: black;
+  margin-top: 20px;
+  line-height: 40px;
+}
+/* Contenedor 4  Instrucciones-----------------------------------------------------------------------------------------*/
+/* Contenedor 5 Instrucciones Imagenes---------------------------------------------------------------------------------*/
+
+#instrucciones_imagenes{
+  background-color: #DFE9EB;
+  width: 100%;
+  height: auto;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+#instrucciones_central{
+  width: 70%;
+  height: auto;
+  display: inline-flex;
+  padding-top: 40px;
+  align-items: center;
+}
+.img_instrucciones{
+  width: 280px;
+  height: auto;
+  padding-bottom: 10px;
+  margin: auto;
+}
+.img_instrucciones .img5{
+  width: 250px;
+  height: 250px;
+  margin: auto;
+  
+}
+.img5 img{
+  width: 100%;
+  height: 100%;
+}
+.img_instrucciones p{
+  font-family: robotoMedium;
+  margin-top: 20px;
+  line-height: 30px;
+  font-size: 15px;
+}
+
+/* Contenedor 5 Instrucciones Imagenes---------------------------------------------------------------------------------*/
+/* Contenedor 6 Boton comenzar-----------------------------------------------------------------------------------------*/
+#boton_comenzar{
+  width: 100%;
+  height: auto;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  
+}
+#boton_comenzar button{
+  background-color: #516F75;
+  color: white;
+  width: 400px;
+  height: 50px;
+  font-size: 20px;
+  font-family: robotoLight;
+  cursor: pointer;
+  border: 1px solid white;
+  
+}
+/* Contenedor 6 Boton comenzar-----------------------------------------------------------------------------------------*/
