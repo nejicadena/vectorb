@@ -1,0 +1,308 @@
+/* Estilos Generales */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+*{
+    font-family: roboto;
+}
+#clearfix{
+  float: none;
+  clear: both;
+}
+/* Fin de Estilos Generales */
+/*-----------------------------------------------------------------------------------------------------------------*/
+/* Fonts */
+
+@font-face{
+    font-family: icons; 
+    src: url(../fonts/websymbols/websymbols-regular-webfont.svg#WebSymbolsRegular)format("svg"),
+         url(../fonts/websymbols/websymbols-regular-webfont.eot);
+    src: url(../fonts/websymbols/websymbols-regular-webfont.eot?#iefix)format("eot"),
+         url(../fonts/websymbols/websymbols-regular-webfont.woff)format("woff"),
+         url(../fonts/websymbols/websymbols-regular-webfont.ttf)format("truetype");
+}
+@font-face{
+    font-family: roboto;
+    src: url(../fonts/Roboto/Roboto-Black.ttf); 
+}
+@font-face{
+    font-family: robotoLight;
+    src: url(../fonts/Roboto/Roboto-Light.ttf); 
+}
+@font-face{
+    font-family: robotoRegular;
+    src: url(../fonts/Roboto/Roboto-Regular.ttf); 
+}
+@font-face{
+    font-family: robotoMedium;
+    src: url(../fonts/Roboto/Roboto-Medium.ttf); 
+}
+@font-face{
+    font-family: robotoBold;
+    src: url(../fonts/Roboto/Roboto-Bold.ttf); 
+}
+/* Fonts */
+/*-----------------------------------------------------------------------------------------------------------------*/
+/*Contenedor1*/
+
+#contenedor1{
+    width: 100%;
+    height: auto;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    background-color: #516F75;
+}
+#contenedor1 #img_cont1{
+    width: 65%;
+    height: 280px;
+    margin: auto;
+    background-image: url(../img/hombre.jpg);
+    background-size: cover;
+    background-position-y: -300px;
+}
+/*Contenedor1*/
+/*-----------------------------------------------------------------------------------------------------------------*/
+/*Contenedor2*/
+#cont2{
+    width: 100%;
+    height: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #FFFFFF;
+}
+#contenedor2{
+    width: 65%;
+    height: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin: auto;
+    /*border: 1px solid black;*/
+}
+
+#contenedor2 .contenedores2{
+    display: flex;
+    width: 100%;
+    height: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    /*background-color: pink;
+    border: 1px solid black;*/
+}
+#contenedor2 .contenedores2:first-child{
+    border-bottom: 1px solid #D9D9D9;
+    padding-bottom: 40px;
+}
+
+#contenedor2 .contenedores2 .subcontenedores2{ 
+    width: 50%;
+    /*border-left: 1px solid black;*/
+}
+/* 1er bloque */
+#contenedor2 .contenedores2 #texto1_cont2{ 
+    font-family: robotoBold;
+    font-size: 25px;
+    color: #85200c;
+    line-height: 40px;
+    letter-spacing: 5px;
+}
+
+#contenedor2 .contenedores2 #texto1_cont2 p:first-child{ 
+    margin-bottom: 20px;
+}
+
+#contenedor2 .contenedores2 #img1_cont2 img{ 
+   height: 100%;
+}
+/* 1er bloque */
+/* 2do bloque */
+#contenedor2 .contenedores2 #img2_cont2 img{ 
+    width: 80%;
+ }
+#contenedor2 .contenedores2 #text2_cont2 { 
+    font-family: robotoMedium;
+    font-size: 20px;
+    color: black;
+    text-align:right;
+    line-height: 40px;
+    padding-top: 100px;
+    
+}
+/* 2do bloque */
+/* 3er bloque */
+#contenedor2 .contenedores2 #img3_cont2 img{ 
+    width: 80%;
+ }
+#contenedor2 .contenedores2 #text3_cont2 { 
+    font-family: robotoMedium;
+    font-size: 20px;
+    color: black;
+    text-align:left;
+    line-height: 40px;
+    padding-top: 90px;
+    
+}
+/* 3er bloque */
+/*Contenedor2*/
+/*-----------------------------------------------------------------------------------------------------------------*/
+/*Contenedor3*/
+
+#contenedor3{
+    width: 100%;
+    height: auto;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    background-color: #DFE9EB;
+}
+
+#contenedor3 #central_cont3{
+    width: 65%;
+    height: auto;
+    margin: auto;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    /*border:1px solid black;*/
+}
+#contenedor3 #central_cont3 h2{
+    text-align: left;
+    font-size: 27px;
+    color: #073763;
+    font-family: robotoBold;
+    margin-bottom: 40px;
+}
+#contenedor3 #central_cont3 ul li{
+    text-align: left;
+    font-size: 20px;
+    color: black;
+    font-family: robotoMedium;
+    line-height: 40px;
+}
+
+/*Contenedor3*/
+/*-----------------------------------------------------------------------------------------------------------------*/
+/*Contenedor4*/
+
+#contenedor4{
+    width: 100%;
+    height: auto;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    background-color: #516F75;
+}
+
+#contenedor4 #central_cont4{
+    width: 65%;
+    margin: auto;
+    display: flex;
+    /*border: 1px solid black;*/
+}
+
+#contenedor4 #central_cont4 .contenedores4{
+    width: 50%;
+    height: auto;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+#contenedor4 #central_cont4 .contenedores4 h1{
+    font-family: robotoMedium;
+    font-size: 20px;
+    text-align: center;
+    color: white;
+    margin-bottom: 15px;
+}
+#contenedor4 #central_cont4 .contenedores4 #mapa{
+    width: 100%;
+    height: auto;
+}
+#contenedor4 #central_cont4 .contenedores4 p{
+    text-align: center;
+    color: white;
+    font-family: robotoRegular;
+    line-height: 30px;
+}
+#contenedor4 #central_cont4 .contenedores4 #boton{
+    display: block;
+    width: 60%;
+    height: auto;
+    padding:10px;
+    margin: auto;
+    margin-top: 100px;
+    margin-bottom: 20px;
+    background-color: white;
+    cursor: pointer;
+    border-radius: 20px;
+}
+#contenedor4 #central_cont4 .contenedores4 #boton a{
+    text-decoration: none;
+    color: #516F75;
+    font-family: robotoRegular;
+    text-align: center;
+    font-size: 18px;
+}
+
+/*Contenedor4*/
+/*-----------------------------------------------------------------------------------------------------------------*/
+/*Contenedor5*/
+
+#talleres{
+    width: 100%;
+    height: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    
+}
+#talleres h1{
+    color: #85200c;
+    font-family: robotoBold;
+    font-size: 30px;
+    margin-top: 20px;
+    line-height: 60px;
+}
+/*Contenedor5*/
+/*-----------------------------------------------------------------------------------------------------------------*/
