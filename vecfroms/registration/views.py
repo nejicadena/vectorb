@@ -1,12 +1,14 @@
 from django.views.generic.base import TemplateView 
 from .forms import UserCreationFormWithEmail
 from django.views.generic import CreateView
-from django.views.generic.edit import UpdateView
 from django.utils.decorators import method_decorator
 from django.contrib.auth.decorators import login_required
 from django.urls import reverse_lazy
 from django import forms
 #from .models import Profile
+
+class ConsentPageView(TemplateView):
+    template_name= "registration/consentimiento.html"
 
 # Create your views here.
 class SignUpView(CreateView):
@@ -29,6 +31,4 @@ class SignUpView(CreateView):
             attrs={'class':'form-control mb-2', 'placeholder':'Repite la contraseña'})
         return form
 
-class ConsentPageView(TemplateView):
-    template_name= "registration/consentimiento.html"
 
