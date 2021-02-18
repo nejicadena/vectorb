@@ -125,5 +125,5 @@ STATIC_URL = '/static/'
 
 # Auth redirects
 
-LOGIN_REDIRECT_URL = 'form'
+LOGIN_REDIRECT_URL = 'modules'
 LOGOUT_REDIRECT_URL = 'home'

@@ -1,3 +1,4 @@
+from django.views.generic.base import TemplateView 
 from .forms import UserCreationFormWithEmail
 from django.views.generic import CreateView
 from django.views.generic.edit import UpdateView
@@ -28,4 +29,6 @@ class SignUpView(CreateView):
             attrs={'class':'form-control mb-2', 'placeholder':'Repite la contraseña'})
         return form
 
+class ConsentPageView(TemplateView):
+    template_name= "registration/consentimiento.html"
 

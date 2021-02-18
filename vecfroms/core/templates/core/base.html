@@ -6,78 +6,115 @@
     <title>{% block title %}{% endblock %}</title>
     {% load static %}
     <!-- Fuentes -->
-    <link href="https://fonts.googleapis.com/css?family=Raleway:400,400i,700,700i" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i" rel="stylesheet">
+
+
     <!-- Estilos -->
-    <link href="{% static 'core/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
-    <link href="{% static 'core/vendor/font-awesome/css/font-awesome.css' %}" rel="stylesheet" type="text/css">
     <link href="{% static 'core/css/main.css' %}" rel="stylesheet">
-	  <link href="{% static 'core/css/fontawesome-all.min.css' %}" rel="stylesheet">
-    <script src="https://use.fontawesome.com/f5d3cd1dcd.js"></script>
+    <link href="{% static 'core/css/home.css' %}" rel="stylesheet">
+    <link href="{% static 'core/css/about.css' %}" rel="stylesheet">
+
+
     <link rel="stylesheet" href="{% static  'core/css/noscript.css' %}" />
 	  <link rel="stylesheet" href="{% static  'core/css/cookiecss.css' %}" />
   </head>
-  <body>
-    <body class="is-preload" style="background-image: linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8)), url('{% static 'core/img/bg.jpg'%}');">
-      <!-- Navegación -->
-      <body class="is-preload">
 
-		<!-- Page Wrapper -->
-			<div id="page-wrapper">
+  <header>
+    <!-- Inicia Contenedor Menu  -------------------------------------------------------------------------------------->
+    <div id="menu">
 
-				<!-- Header -->
-					<header id="header" class="alt">
-						<h1><a href="{% url 'home' %}">Inicio</a></h1>
-						<nav>
-							<a href="#menu">Menu</a>
-						</nav>
-					</header>
+        <!--contenedor secundario menu diana-->
+        <div id="menu_imagenTexto">
+            <div id="logo_menu">
+                <img src="{% static  '/core/img/iztacala.jpeg' %}" alt="#"> 
+            </div>
+            <div>
+                <h1><a href="{% url 'home' %}">Medicina Conductual</a></h1>
+            </div>
+            
+        </div>
+        <!--contenedor secundario  diana-->
 
-				<!-- Menu -->
-					<nav id="menu" >
-						<div class="inner">
-							<h2>Menu</h2>
-							<ul class="links">
-								<li><a href="{% url 'home' %}">Inicio</a></li>
-                <li><a href="{% url 'about' %}">¿Quienes Somos?</a></li>
-								<li><a href="{% url 'modules1' %}">Modulo 1</a></li>
-								<li><a href="{% url 'modules2' %}">Modulo 2</a></li>
-								<li><a href="{% url 'modules3' %}">Modulo 3</a></li>
-								<li><a href="#">Modulo 4</a></li>
-                {% if not request.user.is_authenticated %}
-								<li><a href="{% url 'login' %}">Iniciar sesión</a></li>
-								<li><a href="{% url 'signup' %}">Registrarse</a></li>
-                {% else %}
-                <li><a href="{% url 'logout' %}">Salir</a></li>
-                {% endif %}
-							</ul>
-							<a href="#" class="close">Close</a>
-						</div>
-					</nav>
-      <!-- Contenido -->
-	  
-	
-      {% block content %}{% endblock %}
-	  <!-- Cookies -->
-	<div class="cookie-container">
-      <p>
-        Usamos cookies en este sitio web para brindarle la mejor experiencia en nuestro sitio y mostrarle anuncios relevantes. Para obtener más información, lea nuestra
-        <a href="#">política de privacidad </a> y <a href="#">política de cookies.</a>.
-      </p>
+        <!--contenedor secundario elementos del menu-->
+        <div id="menu_elementos">
 
-      <button class="cookie-btn">
-       <p> Acepto  </p>
-       </button>
+            <div class="buscador"> 
+                <a href="#">L</a>
+            </div>
+            <div class="menu_elementos" id="menu_modulos">
+                <a href="{% url 'modules' %}">Módulos</a> 
+                <ul>
+                    <li>
+                        <a href="{% url 'modules1' %}">Psicoeducación</a>
+                    </li>
+                    <li>
+                        <a href="#">Módulo II</a>
+                    </li>
+                    <li>
+                        <a href="#">Módulo III</a>
+                    </li>
+                    <li>
+                        <a href="#">Módulo IV</a>
+                    </li>
+                </ul>
+            </div>
+            {% if not request.user.is_authenticated %}
+            <div class="menu_elementos">
+                <a href="{% url 'consenti' %}">Registro</a>
+            </div>
+            <div class="menu_elementos">
+                <a href="{% url 'login' %}">Acceder</a>
+            </div>
+            {% else %}
+            <div class="menu_elementos">
+                <a href="{% url 'logout' %}">Salir</a>
+            </div>
+            {% endif %}
+            <div class="menu_elementos">
+                <a href="{% url 'about' %}">¿Quiénes somos?</a>
+            </div>
+            <div class="menu_elementos">
+                <a href="{% url 'home' %}" id="in">Inicio</a>
+            </div>
+
+        </div>
+        <!--contenedor secundario elementos del menu-->
+
     </div>
-      <!-- Javascript -->
-      <script src="{% static 'core/vendor/jquery/jquery.min.js' %}"></script>
-      <script src="{% static 'core/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
-      <script src="{% static 'core/js/jquery.min.js' %}"></script>
-		<script src="{% static 'core/js/jquery.scrollex.min.js' %}"></script>
-		<script src="{% static 'core/js/browser.min.js' %}"></script>
-		<script src="{% static 'core/js/breakpoints.min.js' %}"></script>
-		<script src="{% static 'core/js/util.js' %}"></script>
-		<script src="{% static 'core/js/cookiejs.js' %}"></script>
-      <script src="{% static 'core/js/main.js' %}"></script>
+    <!-- Finaliza Contenedor Menu ------------------------------------------------------------------------------------ -->
+  </header>
+
+  <body>  
+ 
+<!-- Contenido dinamico -->
+{% block content %}{% endblock %}
+<!-- Fin del Contenido dinamico -->
+
+<!-- Footer -->
+<div id="footer">
+  
+    <img src="{% static 'core/img/oro.png' %}" >
+    <p style='text-align: center;'>E-mail: 310154037@iztacala.unam.mx <br/>
+    <p>&copy;Todos lo derechos reservados. 2021</p>
+    
+</div>
+<!-- Fin Footer -->   
+
+<!-- Cookies -->
+<div class="cookie-container">
+  <p>
+    Usamos cookies en este sitio web para brindarle la mejor experiencia en nuestro sitio y mostrarle anuncios relevantes. Para obtener más información, lea nuestra
+  <a href="#">política de privacidad </a> y <a href="#">política de cookies.</a>.
+  </p>
+
+<button class="cookie-btn">
+  <p> Acepto  </p>
+</button>
+</div>
+
+
+<!-- Javascript -->
+<script src="{% static 'core/js/util.js' %}"></script>
+<script src="{% static 'core/js/cookiejs.js' %}"></script>
+<script src="{% static 'core/js/main.js' %}"></script>
   </body>
 </html>
