@@ -59,8 +59,8 @@
             </div>
             {% if not request.user.is_authenticated %}
             <div class="menu_elementos">
-                <a href="#">Registro</a>
-                {% comment %} <a href="{% url 'con' %}">Registro</a> {% endcomment %}
+                <a href="{% url 'con' %}">Registro</a>
+               
             </div>
             <div class="menu_elementos">
                 <a href="{% url 'login' %}">Acceder</a>
