@@ -4,6 +4,6 @@ from .views import SignUpView, ConsentPageView
 
 urlpatterns = [
     path('signup/', SignUpView.as_view(), name="signup"),
-    path('consen/', ConsentPageView.as_view(), name="consenti"),
+    path('consenti/', ConsentPageView.as_view(), name="consentimiento"),
     
 ]
