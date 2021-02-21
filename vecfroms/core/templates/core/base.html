@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>{% block title %}{% endblock %}</title>
+    <title>Home</title>
     {% load static %}
     <!-- Fuentes -->
 
@@ -14,8 +14,7 @@
     <link href="{% static 'core/css/about.css' %}" rel="stylesheet">
 
 
-    <link rel="stylesheet" href="{% static  'core/css/noscript.css' %}" />
-	  <link rel="stylesheet" href="{% static  'core/css/cookiecss.css' %}" />
+	<link rel="stylesheet" href="{% static  'core/css/cookiecss.css' %}" />
   </head>
 
   <header>
@@ -59,7 +58,7 @@
             </div>
             {% if not request.user.is_authenticated %}
             <div class="menu_elementos">
-                <a href="{% url 'con' %}">Registro</a>
+                <a href="{% url 'consentimiento' %}">Registro</a>
                
             </div>
             <div class="menu_elementos">
