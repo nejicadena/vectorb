@@ -3,32 +3,43 @@
 {% block title %}from{% endblock %}
 {% block content %}
 
-<div>
-<h1> ¿QUÉ ES EL BURNOUT? </h1>
-</div>
-
-<div>
-    <p> Antes de comenzar a revisar los materiales de aprendizaje, vamos a comenzar con la siguiente pregunta: ¿Qué pasa por su cabeza cuando escucha hablar de burnout? </p>
-    <p> En la siguiente pizarra, escriba una palabra o frase corta que describa lo anterior, no hay límite de palabras y si no encuentra más espacio, dé clic aquí. </p>
-    <!-- Video -->
-    <div class="padlet-embed" style="border:1px solid rgba(0,0,0,0.1);border-radius:2px;box-sizing:border-box;overflow:hidden;position:relative;width:100%;background:#F4F4F4">
-    <p style="padding:0;margin:0">
-    <iframe src="https://padlet.com/embed/wykmplo9v22try4c" frameborder="0" allow="camera;microphone;geolocation" style="width:100%;height:608px;display:block;padding:0;margin:0">
-    </iframe></p>
-    <div style="padding:8px;text-align:right;margin:0;">
-    <a href="https://padlet.com?ref=embed" style="padding:0;margin:0;border:none;display:block;line-height:1;height:16px" target="_blank">
-    <img src="https://padlet.net/embeds/made_with_padlet.png" width="86" height="16" style="padding:0;margin:0;background:none;border:none;display:inline;box-shadow:none" alt="Hecho con Padlet"></a>
+<div id="m11_contenedor_central">
+    <div id="m11_contenedor1">
+        <h1> ¿QUÉ ES EL BURNOUT? </h1>
+        <div id="linea"></div>
     </div>
-    </div>
-     <!-- Fin Video -->
-    <p> Contraste su respuesta con la de otros participantes, puede poner manita arriba o manita abajo si concuerda o no con algunas respuestas que encontró. </p>
-    <p> ¿Son similares las respuestas escritas en la pizarra? Probablemente llegamos a tener diversas ideas sobre lo que es el burnout, es por esto que en los siguientes materiales vamos a clarificar e indagar aún más sobre lo que sabemos de este padecimiento. </p>
-    <p> Para ver el siguiente material, dé clic en continuar. </p>
-
-
-    <a href={% url 'modules1' %}><button>Regresar</button></a>
-    <a href={% url 'modules12' %}><button>Continuar</button></a>
     
+    
+    <div id="m11_contenedor2">
+        <p> Antes de comenzar a revisar los materiales de aprendizaje, vamos a comenzar con la siguiente pregunta:</p>
+        <p>¿Qué pasa por su cabeza cuando escucha hablar de burnout?</p>
+        <p> En la siguiente pizarra, escriba una palabra o frase corta que describa lo anterior, no hay límite de palabras y si no encuentra más espacio, dé clic <a href="#">aquí.</a> </p>
+        <!-- Video -->
+        <div class="padlet-embed" style="border:1px solid rgba(0,0,0,0.1);border-radius:2px;box-sizing:border-box;overflow:hidden;position:relative;width:100%;background:#F4F4F4">
+        <p style="padding:0;margin:0">
+        <iframe src="https://padlet.com/embed/wykmplo9v22try4c" frameborder="0" allow="camera;microphone;geolocation" style="width:100%;height:608px;display:block;padding:0;margin:0">
+        </iframe></p>
+        <div style="padding:8px;text-align:right;margin:0;">
+        <a href="https://padlet.com?ref=embed" style="padding:0;margin:0;border:none;display:block;line-height:1;height:16px" target="_blank">
+        <img src="https://padlet.net/embeds/made_with_padlet.png" width="86" height="16" style="padding:0;margin:0;background:none;border:none;display:inline;box-shadow:none" alt="Hecho con Padlet"></a>
+        </div>
+        </div>
+         <!-- Fin Video -->
+        <p> Contraste su respuesta con la de otros participantes, puede poner manita arriba o manita abajo si concuerda o no con algunas respuestas que encontró. </p>
+        <p> ¿Son similares las respuestas escritas en la pizarra? Probablemente llegamos a tener diversas ideas sobre lo que es el burnout, es por esto que en los siguientes materiales vamos a clarificar e indagar aún más sobre lo que sabemos de este padecimiento. </p>
+        <p> Para ver el siguiente material, dé clic en <a href="#">continuar.</a> </p>
+    
+    
+        <div id="botones">
+            <div id="boton1" class="boton">
+                <a href={% url 'modules1' %}><button>Regresar</button></a>
+            </div>
+            <div id="boton2" class="boton">
+                <a href={% url 'modules12' %}><button>Continuar</button></a>
+            </div>
+        </div>
+        
+    </div>
 </div>
 
 {% endblock %}
