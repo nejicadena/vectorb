@@ -12,6 +12,7 @@
     <link href="{% static 'core/css/main.css' %}" rel="stylesheet">
     <link href="{% static 'core/css/home.css' %}" rel="stylesheet">
     <link href="{% static 'core/css/about.css' %}" rel="stylesheet">
+    <link href="{% static 'core/css/modules.css' %}" rel="stylesheet">
 
 
 	<link rel="stylesheet" href="{% static  'core/css/cookiecss.css' %}" />
@@ -58,7 +59,7 @@
             </div>
             {% if not request.user.is_authenticated %}
             <div class="menu_elementos">
-                <a href="{% url 'consentimiento' %}">Registro</a>
+                <a href="{% url 'form' %}">Registro</a>
                
             </div>
             <div class="menu_elementos">

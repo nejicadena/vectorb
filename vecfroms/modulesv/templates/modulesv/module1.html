@@ -3,26 +3,34 @@
 {% block title %}from{% endblock %}
 {% block content %}
 
-<div>
-<h1> PSICOEDUCACIÓN </h1>
+<div id="m1_contenedor1">
+  <div id="m1_contenedor1_titulo">
+    <h1> PSICOEDUCACIÓN </h1>
+  </div>
 </div>
 
-<div>
-  <h3> Bienvenido(a) al primer módulo de psicoeducación sobre el burnout, para comenzar quisiera que piense en el último mes... </h3>
-  <p> ¿Se ha sentido exhausta(o) física y emocionalmente? </p>
-  <p> ¿Ha percibido que su rendimiento laboral está disminuyendo a pesar de sus esfuerzos? </p>
-  <p> ¿Ha tenido insomnio? </p>
-  <p> ¿Ha tenido problemas gastrointestinales? </p>
-  <p> ¿Ha experimentado mareos, dolor de pecho y aumento en su frecuencia cardíaca? </p>
-  <p> Si sus respuestas fueron mayormente afirmativas, puede que usted tenga burnout o síndrome de desgaste profesional, probablemente ha oído hablar sobre éste, pero ¿qué es? ¿por qué aparece? ¿por qué es importante reconocerlo y atenderlo? </p>
-  <p> Para contestar éstas preguntas y saber cómo poder manejar los síntomas de este padecimiento, revise los materiales didácticos que he preparado para usted y participe en los ejercicios y actividades programadas. </p>
+<div id="m1_contenedor2">
+  <div id="m1_contenedor2_01">
 
-  <h2> MATERIALES DE APRENDIZAJE </h2>
-  <p> -Infografía: Desgaste profesional (burnout) en personal de salud. </p>
-  <p> -Videoconferencia: Psicoeducación del burnout. </p>
-  <p> -Video animado de caso hipotético. </p>
+    <h3> Bienvenido(a) al primer módulo de psicoeducación sobre el burnout, para comenzar quisiera que piense en el último mes... </h3>
+    <p> ▪ ¿Se ha sentido exhausta(o) física y emocionalmente? </p>
+    <p> ▪ ¿Ha percibido que su rendimiento laboral está disminuyendo a pesar de sus esfuerzos? </p>
+    <p> ▪ ¿Ha tenido insomnio? </p>
+    <p> ▪ ¿Ha tenido problemas gastrointestinales? </p>
+    <p> ▪ ¿Ha experimentado mareos, dolor de pecho y aumento en su frecuencia cardíaca? </p>
+    <p> Si sus respuestas fueron mayormente afirmativas, puede que usted tenga burnout o síndrome de desgaste profesional, probablemente ha oído hablar sobre éste, pero ¿qué es? ¿por qué aparece? ¿por qué es importante reconocerlo y atenderlo? </p>
+    <p> Para contestar éstas preguntas y saber cómo poder manejar los síntomas de este padecimiento, revise los materiales didácticos que he preparado para usted y participe en los ejercicios y actividades programadas. </p>
 
-  <a href={% url 'modules11' %}><button>Empezar</button></a>
+    <h2> MATERIALES DE APRENDIZAJE </h2>
+    <p> -Infografía: Desgaste profesional (burnout) en personal de salud. </p>
+    <p> -Videoconferencia: Psicoeducación del burnout. </p>
+    <p> -Video animado de caso hipotético. </p>
+
+  </div>
+
+  <div id="boton">
+    <a href={% url 'modules11' %}><button>Empezar</button></a>
+  </div>
   
 </div>
 

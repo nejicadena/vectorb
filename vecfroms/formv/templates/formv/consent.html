@@ -1,5 +1,66 @@
 {% extends 'core/base.html' %}
 {% load static %}
+{% block content %}
+
+<div>
+<h1> CONSENTIMIENTO INFORMADO </h1>
+</div>
+
+<div>
+
+  <p> Estimado (a) participante: Por favor lea con atención el siguiente formato, si tiene alguna duda puede aclararla con la 
+  Lic. en Psic. Diana Graciela Pérez Jiménez. </p>
+
+  <p> La Universidad Nacional Autónoma de México a través de la Residencia en Medicina Conductual sede FES Iztacala, le 
+  ofrece participar voluntariamente en el taller en línea: Estrategias de acción ante el burnout, a cargo de la Lic. en Psic.
+   Diana Graciela Pérez Jiménez, quien actualmente está cursando estudios de posgrado en Psicología. </p>
+
+  <p> Este taller se basa en una relación participante-facilitador quienes trabajan en colaboración en la búsqueda de un
+   objetivo común: favorecer la adquisición de estrategias psicológicas para la modificación del comportamiento y el 
+   manejo de síntomas de burnout. </p>
+
+  <p> Antes de decidir iniciar su participación, es muy importante que entienda con claridad sus derechos y
+   responsabilidades como participante. </p>
+
+  <p> El proceso de trabajo en este taller inicia con la evaluación, en la cual se recolectan datos que permiten identificar áreas
+   de trabajo concretas; posteriormente se proporcionan diversos materiales y ejercicios elaborados desde el enfoque 
+   cognitivo-conductual. Su participación en el taller está considerada durante 4 semanas aproximadamente. </p>
+
+  <p> El taller se brindará a través de las Tecnologías de Información y Comunicación (TICs) utilizando aparatos electrónicos
+   para el fin expuesto, a partir de diversas plataformas (Gmail, Meet, Flipgrid, entre otras).</p>
+
+  <p> Durante su participación obtendrá beneficios, sin embargo, también se pueden presentar riesgos e incomodidades, 
+  debido a que en los contenidos del taller se abordan temas delicados que le pueden provocar respuestas emocionales
+   de tristeza, enojo, llanto, entre otros; para que el facilitador le pueda brindar una adecuada retroalimentación y se 
+   obtengan resultados favorables es necesario que proporcione toda la información que se le solicite de forma veraz y 
+   confiable. Por otro lado, al hacer uso de las TICs también puede haber riesgos como comunicación intermitente,
+    lentitud o fallas en la conexión. </p>
+
+  <p> Es importante considerar que la participación de talleres en línea presenta los mismos beneficios de la modalidad 
+  presencial como mejorar la calidad de vida, disminuir el malestar emocional y adquisición de estrategias para la
+   modificación del comportamiento. Adicionalmente, la modalidad a distancia promueve ciertas ventajas tales como: 
+   disposición de tiempo dentro del horario de atención, atención a medidas sanitarias y evitar desplazamiento a un
+    consultorio físico. </p>
+
+  <p> La decisión de participar en el taller es completamente voluntaria, destacando la importancia del cumplimiento en la 
+  revisión de contenidos y en la realización de los ejercicios sugeridos. No habrá ninguna consecuencia desfavorable para 
+  usted, en caso de no aceptar participar. Si decide hacerlo, puede retirarse en el momento que lo desee, pudiendo 
+  informar o no, las razones de su decisión, las cuales serán respetadas en su integridad. </p>
+  <p> La información de sus datos personales es de carácter confidencial; no serán divulgados a terceros ajenos, ni su 
+  identidad. En el caso de que su información fuera utilizada con fines de investigación se eliminará cualquier fuente de
+   información de identificación personal, respetando su derecho a la confidencialidad de la información. Para una 
+   revisión exhaustiva del uso de datos personales, le invitamos a consultar el Aviso de Privacidad Integral de la Facultad 
+   de Estudios Superiores Iztacala, en el enlace https://www.iztacala.unam.mx/ap.php </p>
+
+  <a href={% url 'signup' %}><button>Empezar</button></a>
+  
+</div>
+
+{% endblock %}
+
+
+{% comment %} {% extends 'core/base.html' %}
+{% load static %}
 {% block title %}from{% endblock %}
 {% block content %}
 
@@ -89,4 +150,4 @@
     </div>
   </div>
 </section>
-{% endblock %}
+{% endblock %} {% endcomment %}

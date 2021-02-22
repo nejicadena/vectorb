@@ -1,15 +1,19 @@
 from .forms import ContactForm, FormBornout, FormConsent
+from django.views.generic.base import TemplateView 
 from .models import ModelValid
 from django.views.generic.edit import CreateView
 from django.views.generic.edit import FormView
 from django.shortcuts import redirect, render
 from django.urls import reverse_lazy , reverse
 
-class ConsentiView(FormView):
-    template_name = 'formv/consent.html'
-    form_class = FormConsent
+# class ConsentiView(FormView):
+#     template_name = 'formv/consent.html'
+#     form_class = FormConsent
 
-    success_url = 'contact'
+#     success_url = 'contact'
+
+class ConsentiView(TemplateView):
+    template_name= "formv/consent.html"
 
 
 class ContactView(FormView):

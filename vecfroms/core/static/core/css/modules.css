@@ -1,0 +1,347 @@
+/* Estilos Generales */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+*{
+    font-family: roboto;
+}
+#clearfix{
+  float: none;
+  clear: both;
+}
+/* Fin de Estilos Generales */
+/*-----------------------------------------------------------------------------------------------------------------*/
+/* Fonts */
+
+@font-face{
+    font-family: icons; 
+    src: url(../fonts/websymbols/websymbols-regular-webfont.svg#WebSymbolsRegular)format("svg"),
+         url(../fonts/websymbols/websymbols-regular-webfont.eot);
+    src: url(../fonts/websymbols/websymbols-regular-webfont.eot?#iefix)format("eot"),
+         url(../fonts/websymbols/websymbols-regular-webfont.woff)format("woff"),
+         url(../fonts/websymbols/websymbols-regular-webfont.ttf)format("truetype");
+}
+@font-face{
+    font-family: roboto;
+    src: url(../fonts/Roboto/Roboto-Black.ttf); 
+}
+@font-face{
+    font-family: robotoLight;
+    src: url(../fonts/Roboto/Roboto-Light.ttf); 
+}
+@font-face{
+    font-family: robotoRegular;
+    src: url(../fonts/Roboto/Roboto-Regular.ttf); 
+}
+@font-face{
+    font-family: robotoMedium;
+    src: url(../fonts/Roboto/Roboto-Medium.ttf); 
+}
+@font-face{
+    font-family: robotoBold;
+    src: url(../fonts/Roboto/Roboto-Bold.ttf); 
+}
+/* Fonts */
+/*-----------------------------------------------------------------------------------------------------------------*/
+/* ################################################## MODULO 1 ####################################################*/
+/*Contenedor1*/
+#m1_contenedor1{
+    width: 100%;
+    height: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #516F75;
+}
+#m1_contenedor1 #m1_contenedor1_titulo{
+    width: 65%;
+    height: auto;
+    padding-bottom: 60px;
+    margin: auto;
+    margin-top: 40px;
+    border-bottom: 1px solid white/*#6B848A*/;
+}
+#m1_contenedor1 #m1_contenedor1_titulo h1{
+    font-size: 65px;
+    color: white;
+    text-align: left;
+    font-family: robotoMedium;
+}
+/* Contenedor1 */
+/*-----------------------------------------------------------------------------------------------------------------*/
+/* Contenedor2 */
+#m1_contenedor2{
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#m1_contenedor2 #m1_contenedor2_01{
+    width: 65%;
+    height: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin: auto;
+    border-bottom: 1px solid #D9D9D9;
+}
+
+#m1_contenedor2 #m1_contenedor2_01 h3{
+    font-family: robotoMedium;
+    font-size: 28px;
+    text-align: left;
+    padding-bottom: 40px;
+}
+#m1_contenedor2 #m1_contenedor2_01 p{
+    font-family: robotoRegular;
+    font-size: 28px;
+    text-align: left;
+    padding-bottom: 25px;
+    line-height: 35px;
+}
+#m1_contenedor2 #m1_contenedor2_01 h2{
+    font-family: robotoMedium;
+    font-size: 35px;
+    text-align: left;
+    color: #134F5C;
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
+/* Contenedor2 */
+#m1_contenedor2 #boton{
+    width: 65%;
+    height: auto;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    margin: auto;
+    margin-bottom:40px;
+    border-bottom: 1px solid #D9D9D9;
+}
+#m1_contenedor2 #boton a button{
+    width: 20%;
+    height: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 25px;
+    color: white;
+    background-color: #516F75;
+    font-family: robotoMedium;
+    border-color: 1px solid #516F75;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: none;
+}
+
+/* Contenedor2 */
+/*-----------------------------------------------------------------------------------------------------------------*/
+/* ################################################## MODULO 1 ####################################################*/
+/* ################################################# MODULO 1.1####################################################*/
+/* Contenedor1 */
+#m11_contenedor_central{
+    width: 100%;
+    height: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+#m11_contenedor_central #m11_contenedor1{
+    width: 65%;
+    height: auto;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid #D9D9D9;
+    background-color: white;
+    margin: auto;
+}
+#m11_contenedor_central #m11_contenedor1 h1{
+    font-family: robotoMedium;
+    font-size: 60px;
+    color: #85200C;
+}
+#m11_contenedor_central #m11_contenedor1 #linea{
+    width: 10%;
+    height: auto;
+    margin: auto;
+    margin-top: 20px;
+    border-bottom: 8px solid #3D7684;
+}
+
+
+
+#m11_contenedor_central #m11_contenedor2{
+    width: 65%;
+    height: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: white;
+    margin: auto;
+}
+#m11_contenedor_central #m11_contenedor2 p{
+    font-family: robotoRegular;
+    font-size: 22px;
+    line-height: 33px;
+    margin-bottom: 20px;
+}
+#m11_contenedor_central #m11_contenedor2 p a{
+    color: black;
+}
+#m11_contenedor_central #m11_contenedor2 p a:last-child{
+    color: gray;
+    text-decoration: none;
+}
+
+.padlet-embed{
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+#botones{
+    width: 100%;
+    height: auto;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    display: flex;
+    border-bottom: 1px solid #D9D9D9;
+}
+#botones #boton2{
+    margin-left: 81%;
+}
+#botones a button{
+    font-family: robotoRegular;
+    font-size: 25px;
+    color: white;
+    background-color: #516F75;
+    border: 1px solid #516F75;
+    border-radius: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    cursor: pointer;
+}
+/* Contenedor1 */
+/*-----------------------------------------------------------------------------------------------------------------*/
+/* ################################################# MODULO 1.2####################################################*/
+/* Contenedor central */
+
+#m12_contenido_central{
+    width: 100%;
+    height: auto;
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+#m12_contenido_central .m12_contenedor{
+    width: 45%;
+    height: auto;
+    margin: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#m12_contenido_central #m12_contenedor1{
+    height: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+#m12_contenido_central #m12_contenedor1 h1{
+    font-size: 60px;
+    font-family: robotoMedium;
+    color: #85200C;
+}
+#m12_contenedor1 #linea{
+    width: 10%;
+    height: auto;
+    margin: auto;
+    margin-top: 20px;
+    border-bottom: 8px solid #3D7684;
+}
+
+
+#m12_contenido_central #m12_contenedor2 {
+    margin-top: 40px;
+}
+#m12_contenido_central #m12_contenedor2 h1{
+    font-size: 50px;
+    font-family: robotoMedium;
+    line-height: 60px;
+}
+
+#m12_contenido_central #m12_contenedor3 {
+    margin-top: 40px;
+}
+#m12_contenido_central #m12_contenedor3 p{
+    font-size: 20px;
+    font-family: robotoRegular;
+    line-height: 35px;
+}
+.img-fluid{
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+#m12_botones{
+    width: 100%;
+    height: auto;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    display: flex;
+    border-bottom: 1px solid #D9D9D9;
+}
+#m12_botones #m12_boton2{
+    margin-left: 72.5%;
+}
+#m12_botones a button{
+    font-family: robotoRegular;
+    font-size: 25px;
+    color: white;
+    background-color: #516F75;
+    border: 1px solid #516F75;
+    border-radius: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    cursor: pointer;
+}
+
+/* Contenedor central */
+/*-----------------------------------------------------------------------------------------------------------------*/
+
