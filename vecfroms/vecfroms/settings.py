@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'core',
     'formv',
     'modulesv',
+    'newmodules',
 ]
 
 MIDDLEWARE = [
