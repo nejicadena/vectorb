@@ -21,6 +21,7 @@ urlpatterns = [
     path('',include('core.urls')),
     path('formv/',include('formv.urls')),
     path('modules/',include('modulesv.urls')),
+    path('newmodulesB/',include('newmodules.urls')),
     # Paths de Auth
     path('accounts/', include('django.contrib.auth.urls')),
     path('accounts/', include('registration.urls')),
