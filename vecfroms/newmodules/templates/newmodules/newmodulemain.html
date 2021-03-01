@@ -1,0 +1,98 @@
+{% extends 'core/base.html' %}
+{% load static %}
+{% block content %}
+<section class="page-section about-heading">
+<div class="container" style="padding-top: 0px;">
+{% comment %} {% if request.GET %}
+{%for values in request.GET%}
+
+<div class="alert alert-success" role="alert">
+  <span class="section-heading-upper">Su resultado fue </span>{{values}}
+</div>
+{% endfor %}
+{% endif %} {% endcomment %}
+
+<!-- Contenedor Modulos de trabajo -->
+<div>
+  <div>
+    <h1>MÓDULOS DE TRABAJO</h1>
+  </div>
+  <div>
+    <img>
+  </div>
+</div>
+<!-- Contenedor Modulos descripcion -->
+<div>
+  <p>
+    El taller está diseñado en formato modular; cada uno de los módulos
+    de trabajo se irán habilitando dependiendo de su progreso, trabajo y
+    participación en el taller.
+  </p>
+  <p>
+    Al finalizar cada módulo encontrará una evaluación sobre los 
+    contenidos, si usted obtiene más del 80% de aciertos, podrá habilitar el 
+    siguiente módulo, de lo contrario, tendrá la oportunidad de volver a 
+    responder el cuestionario para lograr acreditarlo.
+  </p>
+  <p>
+    Por favor siga las indicaciones especificas que encontrará en cada sección. 
+  </p>
+</div>
+<!-- Contenedor Modulos -->
+<div>
+  <!--Modulos 1 -->
+  <div>
+    <div>
+      <h1>MÓDULO I. </h1>
+      <h2>Psicoeducación</h2>
+      <p>Conozca más sobre el Burnout</p>
+      <p>¿Qué es?</p>
+      <p>¿Por qué y cómo surge?</p>
+      <p>¿Qué consecuencias tiene?</p>
+      <p>¿Qué estrategias puede llevar a cabo para disminuirlo?</p>
+    </div>
+    <div>
+      <button>Entrar</button>
+    </div>
+  </div>
+  <!--Modulos 2 -->
+  <div>
+    <div>
+      <h1>MÓDULO II. </h1>
+      <h2>Relajación</h2>
+      <p>Aprenda a relajarse ante situaciones estresantes con el
+       entrenamiento en relajación muscular progresiva y 
+       respiración rítmica. </p>
+    </div>
+    <div>
+      <button>Entrar</button>
+    </div>
+  </div>
+  <!--Modulos 3 -->
+  <div>
+    <div>
+      <h1>MÓDULO III. </h1>
+      <h2>Solución de problemas</h2>
+      <p>Conozca y ponga en práctica los pasos necesarios para 
+      solucionar problemas eficazmente.  </p>
+    </div>
+    <div>
+      <button>Entrar</button>
+    </div>
+  </div>
+  <!--Modulos 1 -->
+  <div>
+    <div>
+      <h1>MÓDULO IV. </h1>
+      <h2>Programación de actividades</h2>
+      <p>Aprenda a planificar su tiempo para realizar diferentes
+       actividades en su vida diaria.   </p>
+    </div>
+    <div>
+      <button>Entrar</button>
+    </div>
+  </div>
+</div>
+
+
+{% endblock %}
