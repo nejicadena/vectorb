@@ -1,35 +1,25 @@
-from django.views.generic.base import TemplateView 
-from django.views.generic.edit import CreateView
-from django.views.generic.detail import DetailView
-from django.views.generic import ListView
+from django.views.generic.base import TemplateView
 from django.urls import reverse_lazy
-#from .forms import CommentForm
-#from .models import Comment, Comment2, Comment3
 from django.shortcuts import render, get_object_or_404, redirect
 
 # Create your views here.
 class ModulesPageView(TemplateView):
     
     template_name= "modulesv/modulesmain.html"
-    def get_queryset(self):
-        return self.object.book_set.all()
+    
     
 class ModulesPageView1(TemplateView):
     
     template_name= "modulesv/module1.html" 
-    def get_queryset(self):
-        return self.object.book_set.all()
+    
 class ModulesPageView11(TemplateView):
    
     template_name= "modulesv/module11.html" 
-    def get_queryset(self):
-        return self.object.book_set.all()
+    
 class ModulesPageView12(TemplateView):
 
     template_name= "modulesv/module12.html" 
-    def get_queryset(self):
-        return self.object.book_set.all()      
-
+  
 # class CreateComment1(CreateView):
 #     model = Comment
     
