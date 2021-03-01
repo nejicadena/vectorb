@@ -3,19 +3,23 @@
 {% block content %}
 
 <!-- Seccion Banner -->
-<section id="banner">
-	 <div class="contador parallax">
-               <ul class="resumen-evento clearfix">
-                   <li><p class="titlep">ESTRATEGIAS DE ACCIÓN </p>
-				   		<p class="titlep"> ANTE EL BURNOUT</p>
-						   <div class="bordert"></div>
-						<p class="titlep2">TALLER EN LÍNEA PARA PROFESIONALES DE LA SALUD</p>
-				   </li>  
-               </ul>
-    </div>  
-</section>
+<div id="contenedor">
+	<div id="texto">
+		<p class="text1">
+			ESTRATEGIAS DE ACCIÓN
+		</p>
+		<p class="text1">
+			ANTE EL BURNOUT
+		</p>
+		<div id="linea_text1"></div>
+		<p id="text2">
+			TALLER EN LÍNEA PARA PROFESIONALES DE LA SALUD
+		</p>
+
+	</div>
+</div>
 <!-- Seccion Banner Fin-->
-<div id="clearfix"></div>
+<div id="linea1"></div>
 <!-- Seccion Bienvenida -->
 <section class="containerb">
 	<div>
@@ -26,7 +30,7 @@
 	</div>
 </section>
 <!-- Seccion Bienvenida Fin-->
-<div id="clearfix"></div>
+
 <!-- Seccion ?-->
 <section class="contenedor3a">
 	<div id="cont_img3">
@@ -63,10 +67,24 @@
 	</div>
 </section>
 <section id="botones3">
+
+	<div id="bt3">
+
+		<div class="bt">
+			<a href="#">+</a>
+		</div>
+		<div class="bt">
+			<a href="#">+</a>
+		</div>
+		<div class="bt">
+			<a href="#">+</a>
+		</div>
+
+	</div>
 	
 </section>
 <!-- Seccion ? Fin-->
-<div id="clearfix"></div>
+
 <!-- Seccion Instrucciones-->
 <section id="instrucciones">
 	<div id="cont_instrucciones">
@@ -83,40 +101,62 @@
 <!-- Seccion Instrucciones imagenes-->
 <section id="instrucciones_imagenes">
 	<div id="instrucciones_central">
-		<div class="img_instrucciones">
-			<div class="img5">
-				<img src="{% static 'core/img/verificar.png'%}">
+
+		<div class="cont_imgs">
+
+			<div class="imgs">
+				<img src="{% static 'core/img/verificar.png'%}" alt="#">
 			</div>
-			<p>
-			Regístrese y responda el cuestionario de Burnout.
-			</p>
-		</div>
-		<div class="img_instrucciones">
-			<div class="img5">
-				<img src="{% static 'core/img/tableta.png'%}">
+
+			<div class="desc">
+				<p>
+					Regístrese y responda el cuestionario de Burnout.
+				</p>
+
 			</div>
-			<p>
-			Ingrese a los módulos durante 4 semanas consecutivas
-			 para visualizar los materiales de aprendizaje.
-			</p>
+
 		</div>
-		<div class="img_instrucciones">
-			<div class="img5">
-				<img src="{% static 'core/img/certificado.png'%}">
+
+		<div class="cont_imgs">
+
+			<div class="imgs">
+				<img src="{% static 'core/img/tableta.png'%}" alt="#">
 			</div>
-			<p>
-			Realice los ejercicios y prácticas de cada módulo,
-			 responda breves evaluaciones y participe en foros de discusión, 
-			 así podrá obtener su constancia.
-			</p>
+
+			<div class="desc">
+				<p>
+					Ingrese a los módulos durante 4 semanas consecutivas para visualizar los materiales de aprendizaje.
+				</p>
+
+			</div>
+
 		</div>
-	</div>
+
+		<div class="cont_imgs">
+
+			<div class="imgs">
+				<img src="{% static 'core/img/certificado.png'%}" alt="#">
+			</div>
+
+			<div class="desc">
+				<p>
+					Realice los ejercicios y prácticas de cada módulo, responda breves evaluaciones y participe en foros de discusión, así podrá obtener su constancia.
+				</p>
+
+			</div>
+
+		</div>
+
+	</div>	
 </section>
 <!-- Seccion Instrucciones imagenes--> 
 <!-- Seccion Boton comenzar--> 
 <div id="boton_comenzar">
      <a href="{% url 'form' %}"><button>Empezar</button></a>
 </div> 
+
+<div id="linea2"></div>
+
 <!-- Seccion Boton comenzar-->
 
 {% endblock %}
