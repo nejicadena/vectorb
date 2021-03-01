@@ -3,8 +3,8 @@ from django.views.generic.edit import CreateView
 from django.views.generic.detail import DetailView
 from django.views.generic import ListView
 from django.urls import reverse_lazy
-from .forms import CommentForm
-from .models import Comment, Comment2, Comment3
+#from .forms import CommentForm
+#from .models import Comment, Comment2, Comment3
 from django.shortcuts import render, get_object_or_404, redirect
 
 # Create your views here.
