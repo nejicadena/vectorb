@@ -92,75 +92,49 @@ table {
 /* Fin Fonts ----------------------------------------------------------------------------------------------------------*/
 /* Contenedor parallax ------------------------------------------------------------------------------------------------*/
 
-
-#banner img{
-    opacity: .8;
-}
-
-.parallax:before{
+#contenedor{
   width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
+  height: 300px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-image: url(../img/medica.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center center;
+  background-position: center -250px;
   background-attachment: fixed;
-  -webkit-filter:brightness(.8);
-  filter: brightness(.8);
 }
-div.contador{
-  position: relative;
-  height: auto;
-}
-div.contador:before{
-  opacity: .5;
-  background-image:url("../img/medica.jpg");
-  content:'';
-}
-ul.resumen-evento {
-  position: relative;
-  padding: 120px 0;
-}
-ul.resumen-evento li{
-  width: 100%;
-  float: center;
+#contenedor #texto{
   text-align: center;
-  color: #ffffff;
-  text-transform: uppercase;
-  font-family: 'Oswald',sans-serif;
-  font-size: 24px;
+}
+#contenedor #texto .text1{
+  font-family: robotoMedium;
+  font-size: 75px;
+  letter-spacing: 5px;
+  margin-top: 20px;
 }
 
-p.titlep{
-    color: rgb(0, 0, 0);
-    font-size: 4em;
-    display: block;
-    margin: 0 0 10px 0;
-}
-.bordert{
+#linea_text1{
+  width: 5%;
+  height: 7px;
   margin: auto;
-  width: 10%;
-  border-top: 8px solid #53A7B8;
-  margin-bottom: 10px;
-  margin-top: 40px;
+  margin-top: 15px;
+  margin-bottom: 20px;
+  background-color: RGB(83,167,184);
 }
-p.titlep2{
-  color: black;
+
+#contenedor #texto #text2{
   font-family: robotoMedium;
-  font-size: 33px;
-  letter-spacing: 6px;
-  display: block;
-  margin-top: 40px;
-  
-}
-p.titlep{
-  color: black;
-  font-family: robotoMedium;
-  font-size: 80px;
+  font-size: 40px;
+  margin-top: 10px;
 }
 /* Contenedor parallax ------------------------------------------------------------------------------------------------*/
+#linea1{
+  width: 65%;
+  height: 1px;
+  background-color:RGB(217,217,217);
+  margin: auto;
+  margin-top: 10px;
+}
 /* Contenedor 2  Bienvenida--------------------------------------------------------------------------------------------*/
 
 .containerb{
@@ -217,6 +191,8 @@ p.titlep{
   width: 370px;
   height: 100px;
   margin-left: 10px;
+  padding-bottom: 10px;
+  border-bottom:1px solid RGB(137,157,161);
   
 }
 #contenedor3b .cont_text3 a{
@@ -245,7 +221,42 @@ p.titlep{
   background-color: #516F75;
 }
 
+/* botones */
+
+#botones3{
+  width: 100%;
+  height: auto;
+  display: flex;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: RGB(223,233,235);
+}
+
+#bt3{
+  display: flex;
+  width: 60%;
+  height: auto;
+  margin: auto;
+}
+#bt3 .bt{
+  width: 60px;
+  height: 40px;
+  margin: auto;
+  background-color: RGB(81,111,117);
+  border-radius: 5px;
+  border: 1px solid white;
+}
+#bt3 .bt a{
+  display: block;
+  text-decoration: none;
+  color: white;
+  font-family: robotoMedium;
+  font-size: 20px;
+  line-height: 40px;
+}
+
 /* Contenedor 3  Preguntas---------------------------------------------------------------------------------------------*/
+
 /* Contenedor 4  Instrucciones-----------------------------------------------------------------------------------------*/
 
 #instrucciones{
@@ -277,34 +288,36 @@ p.titlep{
   padding-bottom: 40px;
 }
 #instrucciones_central{
-  width: 70%;
-  height: auto;
-  display: inline-flex;
-  padding-top: 40px;
+  display: flex;
+  width: 65%;
+  height: auto; 
   align-items: center;
-}
-.img_instrucciones{
-  width: 280px;
-  height: auto;
-  padding-bottom: 10px;
   margin: auto;
 }
-.img_instrucciones .img5{
+
+.cont_imgs{
+  margin: auto;
+  width: 33%;
+  height: 400px;
+}
+
+.cont_imgs .imgs img{
   width: 250px;
   height: 250px;
   margin: auto;
-  
 }
-.img5 img{
-  width: 100%;
-  height: 100%;
+
+.cont_imgs .desc {
+  margin-top: 70px;
+  padding-right: 25px;
+  padding-left: 25px;
 }
-.img_instrucciones p{
-  font-family: robotoMedium;
-  margin-top: 20px;
-  line-height: 30px;
-  font-size: 15px;
+.cont_imgs .desc p{
+  font-family: robotRegular;
+  font-size: 20px;
 }
+
+
 
 /* Contenedor 5 Instrucciones Imagenes---------------------------------------------------------------------------------*/
 /* Contenedor 6 Boton comenzar-----------------------------------------------------------------------------------------*/
@@ -323,7 +336,16 @@ p.titlep{
   font-size: 20px;
   font-family: robotoLight;
   cursor: pointer;
+  border-radius: 5px;
   border: 1px solid white;
   
+}
+
+#linea2{
+  width: 65%;
+  height: 1px;
+  background-color: RGB(217,217,217);
+  margin: auto;
+  margin-bottom: 20px;
 }
 /* Contenedor 6 Boton comenzar-----------------------------------------------------------------------------------------*/

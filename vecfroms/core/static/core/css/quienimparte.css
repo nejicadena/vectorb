@@ -1,0 +1,174 @@
+/* Estilos Generales */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+  text-align: center;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+*{
+    font-family: roboto;
+}
+#clearfix{
+  float: none;
+  clear: both;
+}
+/* Fin de Estilos Generales */
+/*-----------------------------------------------------------------------------------------------------------------*/
+/* Fonts */
+
+@font-face{
+    font-family: icons; 
+    src: url(../fonts/websymbols/websymbols-regular-webfont.svg#WebSymbolsRegular)format("svg"),
+         url(../fonts/websymbols/websymbols-regular-webfont.eot);
+    src: url(../fonts/websymbols/websymbols-regular-webfont.eot?#iefix)format("eot"),
+         url(../fonts/websymbols/websymbols-regular-webfont.woff)format("woff"),
+         url(../fonts/websymbols/websymbols-regular-webfont.ttf)format("truetype");
+}
+@font-face{
+    font-family: roboto;
+    src: url(../fonts/Roboto/Roboto-Black.ttf); 
+}
+@font-face{
+    font-family: robotoLight;
+    src: url(../fonts/Roboto/Roboto-Light.ttf); 
+}
+@font-face{
+    font-family: robotoRegular;
+    src: url(../fonts/Roboto/Roboto-Regular.ttf); 
+}
+@font-face{
+    font-family: robotoMedium;
+    src: url(../fonts/Roboto/Roboto-Medium.ttf); 
+}
+@font-face{
+    font-family: robotoBold;
+    src: url(../fonts/Roboto/Roboto-Bold.ttf); 
+}
+/*--------------------------------------------------------------------------------------------------*
+/* Contenedor 1*/
+#quien_cont1{
+    width: 100%;
+    height: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: RGB(223,233,235);
+}
+#quien_cont1Central{
+    display: flex;
+    width: 60%;
+    height: auto;
+    margin: auto;
+
+}
+
+#quien_text_cont1{
+    width: 50%;
+    height: auto;
+}
+#quien_text_cont1 h1{
+    font-family: robotoBold;
+    font-size: 60px;
+    color: RGB(43,93,104);
+    text-align: left;
+    line-height: 90px;
+    margin-top: 40px;
+}
+
+#quien_img_cont1{
+    width: 50%;
+    height: auto;
+
+}
+#quien_img_cont1 img{
+    margin: auto;
+    width: 350px;
+    height: 350px;
+}
+
+/* Contenedor 1*/
+/*--------------------------------------------------------------------------------------------------*
+/* Contenedor 2*/
+#quien_cont2{
+    width: 100%;
+    height: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+}
+#quien_cont2Central{
+    display: flex;
+    width: 60%;
+    height: auto;
+    margin: auto;
+
+}
+#quien_img_cont2{
+    width: 50%;
+    height: auto;
+    text-align: left; /*alinear la foto a la izquierda*/
+
+}
+#quien_img_cont2 img{
+    width: 80%;
+    margin-left: 0px;
+}
+#quien_text_cont2{
+    width: 50%;
+}
+#quien_text_cont2 h2{
+    font-family: robotoBold;
+    font-size: 22px;
+    margin-top: 10px;
+    margin-bottom: 25px;
+}
+#quien_text_cont2 p{
+    font-family: robotoRegular;
+    font-size: 20px;
+    margin-top: 20px;
+    line-height: 30px;
+}
+/* Contenedor 2*/
