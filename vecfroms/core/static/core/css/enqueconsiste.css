@@ -1,0 +1,234 @@
+/* Estilos Generales */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+  text-align: center;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+*{
+    font-family: roboto;
+}
+#clearfix{
+  float: none;
+  clear: both;
+}
+/* Fin de Estilos Generales */
+/*-----------------------------------------------------------------------------------------------------------------*/
+/* Fonts */
+
+@font-face{
+    font-family: icons; 
+    src: url(../fonts/websymbols/websymbols-regular-webfont.svg#WebSymbolsRegular)format("svg"),
+         url(../fonts/websymbols/websymbols-regular-webfont.eot);
+    src: url(../fonts/websymbols/websymbols-regular-webfont.eot?#iefix)format("eot"),
+         url(../fonts/websymbols/websymbols-regular-webfont.woff)format("woff"),
+         url(../fonts/websymbols/websymbols-regular-webfont.ttf)format("truetype");
+}
+@font-face{
+    font-family: roboto;
+    src: url(../fonts/Roboto/Roboto-Black.ttf); 
+}
+@font-face{
+    font-family: robotoLight;
+    src: url(../fonts/Roboto/Roboto-Light.ttf); 
+}
+@font-face{
+    font-family: robotoRegular;
+    src: url(../fonts/Roboto/Roboto-Regular.ttf); 
+}
+@font-face{
+    font-family: robotoMedium;
+    src: url(../fonts/Roboto/Roboto-Medium.ttf); 
+}
+@font-face{
+    font-family: robotoBold;
+    src: url(../fonts/Roboto/Roboto-Bold.ttf); 
+}
+/*--------------------------------------------------------------------------------------------------------------------------*/
+/* Contenedor 1*/
+#cont1{
+    width: 100%;
+    height: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: RGB(223,233,235);
+}
+#cont1_central{
+    display: flex;
+    width: 65%;
+    height: auto;
+    margin: auto;
+}
+
+#text_cont1{
+    width: 50%;
+    height: auto;
+    padding-top: 80px;
+}
+#text_cont1 h1{
+    font-family: robotoBold;
+    font-size: 60px;
+    letter-spacing: 10px;
+    color: RGB(43,93,104);
+    line-height: 100px;
+}
+
+#img_cont1{
+    width: 50%;
+    height: auto;
+}
+#img_cont1 img{
+    width: 100%;
+    height: 350px;
+}
+/* Contenedor 1*/
+/*--------------------------------------------------------------------------------------------------------------------------*/
+/* Contenedor 2*/
+#cont2{
+    width: 65%;
+    height: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin: auto;
+    border-bottom: 1px solid RGB(217,217,217);
+    margin-bottom: 10px;
+}
+#c1_cont2{
+    display: flex;
+    width: 100%;
+    height: auto;
+    background-color: white;
+}
+#img_cont2{
+    width: 35%;
+    height: auto;
+}
+#img_cont2 img{
+    width: 100%;
+}
+#text_cont2{
+    width: 65%;
+    height: auto;
+    text-align: left;
+}
+#text_cont2 p{
+    font-family: robotoRegular;
+    font-size: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-top: 40px;
+    line-height: 30px;
+}
+#c2_cont2 p{
+    text-align: left;
+    font-family: robotoRegular;
+    font-size: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-top: 20px;
+    line-height: 30px;
+}
+#c2_cont2 h1{
+    text-align: left;
+    font-family: robotoBold;
+    font-size: 35px;
+    padding-left: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: RGB(91,15,0);
+}
+/* Contenedor 2*/
+/*--------------------------------------------------------------------------------------------------------------------------*/
+/* Contenedor 3*/
+#cont3{
+    width: 100%;
+    height: auto;
+    padding-top: 45px;
+    padding-bottom: 45px;
+    background-color: RGB(81,111,117);
+}
+#cont3 h1{
+    font-family: robotoBold;
+    font-size: 65px;
+    color: white;
+}
+/* Contenedor 3*/
+/*--------------------------------------------------------------------------------------------------------------------------*/
+/* Contenedor 4*/
+#cont4{
+    display: flex;
+    width: 65%;
+    height: auto;
+    margin: auto;
+    margin-bottom: 50px;
+}
+
+#espacio_cont4{
+    width: 50%;
+    height: auto;
+}
+#text_cont4{
+    width: 50%;
+    height: auto;
+}
+#text_cont4 h3{
+    font-family: robotoMedium;
+    font-size: 35px;
+    color: RGB(19,79,92);
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+#text_cont4 p{
+    font-family: robotoLight;
+    font-size: 18px;
+    letter-spacing: 2px;
+    padding-left: 20px;
+    padding-right: 20px;
+    line-height: 30px;
+
+}
+/* Contenedor 4*/

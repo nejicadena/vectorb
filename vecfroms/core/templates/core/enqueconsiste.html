@@ -2,75 +2,108 @@
 {% load static %}
 {% block content %}
 <!-- Banner img -->
-<div>
-    <div> <h1>ACERCA DEL TALLER</h> </div>
-    <div>
-    <img src="{% static 'core/img/female.jpg'%}" >
-    </div>
+<div id="cont1">
+
+   <div id="cont1_central">
+        <div id="text_cont1"> 
+
+            <h1>ACERCA DEL TALLER</h>
+
+        </div>
+
+        <div id="img_cont1">
+
+            <img src="{% static 'core/img/female.jpg'%}" >
+
+        </div>
+   </div>
+
 </div>
 <!-- Body about -->
-<div>
+<div id="cont2">
 	<!-- Sub 1 Body about -->
-	<div>
-        <div>
-		<img src="{% static 'core/img/psicoeducacion.png'%}">
+	<div id="c1_cont2">
+
+        <div id="img_cont2">
+
+		    <img src="{% static 'core/img/psicoeducacion.png'%}">
+
 		</div>
         <!---->
-		<div>
+
+		<div id="text_cont2">
+
             <p>El burnout surge de un estrés crónico a causa de diversos factores
             laborales generando consecuencias a nivel psicológico, físico y 
             laboral a quien lo padece, por lo tanto resulta de gran relevancia
             reconocerlo y tratarlo. 
             </p>
+
             <p>
             Como psicólogos especialistas en medicina conductual, tenemos el
             objetivo de brindarle las mejores herramientas, basadas en 
             evidencia científica, que tengan por objetivo el manejo adecuado
             del Burnout.
             </p>
+
 		</div>
+
 	</div>
 	<!-- Sub  Body about -->
-	<div>
+	<div id="c2_cont2">
         <p> A lo largo de cuatro módulos, y mediante recursos audiovisuales, usted podrá aprender y poner en práctica técnicas 
         cognitivo-conductuales que le ayudarán a cumplir el objetivo.
         </p>
 		<h1>Beneficios</h1>
-        <p>Modalidad asincrónica; taller flexible a sus tiempos ya que no implica una conexión simultánea, por lo que la
+        <p> ▪ Modalidad asincrónica; taller flexible a sus tiempos ya que no implica una conexión simultánea, por lo que la
          plataforma estará disponible en cualquier momento.</p>
-        <p>Supervisión y contacto continuo con la responsable principal del taller. </p>
-        <p>Oportunidad de compartir sus experiencias con otros profesionales de la salud.</p>
+        <p> ▪ Supervisión y contacto continuo con la responsable principal del taller. </p>
+        <p> ▪ Oportunidad de compartir sus experiencias con otros profesionales de la salud.</p>
 	</div>
 </div>
 
 <!-- Contenedor Modulos de trabajo -->
-<div>
+<div id="cont3">
+
 	<h1>
 		MÓDULOS DE TRABAJO
 	</h1>
+
 </div>
+
 <!-- Contenedor Modulos de trabajo 2 -->
-<div>
-	<div>
-		<h3>Psicoeducación</h3>
-        <p>Conozca más sobre el Burnout</p>
-        <p>​​¿Qué es?</p>
-        <p>¿Por qué y cómo surge?</p>
-        <p>¿Qué consecuencias tiene?</p>
-        <p>¿Qué estrategias puede llevar a cabo para disminuirlo?</p>
-	</div>
-    <div>
-		<h3>Entrenamiento en relajación</h3>
-        <p>Aprenda a relajarse ante situaciones estresantes con el entrenamiento en relajación muscular progresiva y respiración rítmica. </p>
-	</div>
-    <div>
-		<h3>Solución de problemas</h3>
-        <p>Conozca y ponga en práctica los pasos necesarios para solucionar problemas eficazmente. </p>
-	</div>
-    <div>
-		<h3>Planificación de actividades</h3>
-        <p>Aprenda a planificar su tiempo para realizar diferentes actividades en su vida diaria. </p>
-	</div>
+<div id="cont4">
+	<div id="espacio_cont4">
+
+    </div>
+
+    <div id="text_cont4">
+
+        <div class="cont_cont4">
+            <h3>Psicoeducación</h3>
+            <p>Conozca más sobre el Burnout</p>
+            <p>​​¿Qué es?</p>
+            <p>¿Por qué y cómo surge?</p>
+            <p>¿Qué consecuencias tiene?</p>
+            <p>¿Qué estrategias puede llevar a cabo para disminuirlo?</p>
+        </div>
+
+        <div class="cont_cont4">
+            <h3>Entrenamiento en relajación</h3>
+            <p>Aprenda a relajarse ante situaciones estresantes con el entrenamiento en relajación muscular progresiva y respiración rítmica. </p>
+        </div>
+
+        <div class="cont_cont4">
+            <h3>Solución de problemas</h3>
+            <p>Conozca y ponga en práctica los pasos necesarios para solucionar problemas eficazmente. </p>
+        </div>
+
+        <div class="cont_cont4">
+            <h3>Planificación de actividades</h3>
+            <p>Aprenda a planificar su tiempo para realizar diferentes actividades en su vida diaria. </p>
+        </div>
+
+    </div>
 	
 </div>
 {% endblock %}
