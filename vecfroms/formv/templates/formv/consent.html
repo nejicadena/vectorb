@@ -2,11 +2,11 @@
 {% load static %}
 {% block content %}
 
-<div>
-<h1> CONSENTIMIENTO INFORMADO </h1>
+<div id="consent_header">
+  <h1> CONSENTIMIENTO INFORMADO </h1>
 </div>
 
-<div>
+<div id="consent_central">
 
   <p> Estimado (a) participante: Por favor lea con atención el siguiente formato, si tiene alguna duda puede aclararla con la 
   Lic. en Psic. Diana Graciela Pérez Jiménez. </p>
@@ -50,10 +50,17 @@
   identidad. En el caso de que su información fuera utilizada con fines de investigación se eliminará cualquier fuente de
    información de identificación personal, respetando su derecho a la confidencialidad de la información. Para una 
    revisión exhaustiva del uso de datos personales, le invitamos a consultar el Aviso de Privacidad Integral de la Facultad 
-   de Estudios Superiores Iztacala, en el enlace https://www.iztacala.unam.mx/ap.php </p>
+   de Estudios Superiores Iztacala, en el enlace <a href="https://www.iztacala.unam.mx/ap.php">https://www.iztacala.unam.mx/ap.php</a>  </p>
+   <p>Finalmente, cabe mencionar que su participación en este taller es completamente gratuita, en ningún momento se le solicitará alguna remuneración económica o material.</p>
 
-  <a href={% url 'signup' %}><button>Empezar</button></a>
-  
+  <div id="consent_boton">
+
+    <a href="{% url 'signup' %}">
+      Acepto
+    </a>
+
+  </div>
+
 </div>
 
 {% endblock %}
