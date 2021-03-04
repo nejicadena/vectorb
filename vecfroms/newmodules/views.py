@@ -19,3 +19,11 @@ class newModulesPageView11(TemplateView):
 class newModulesPageView12(TemplateView):
 
     template_name= "newmodules/newmodule12.html" 
+
+class newModulesPageView13(TemplateView):
+
+    template_name= "newmodules/newmodule13.html" 
+
+class newModulesPageView14(TemplateView):
+
+    template_name= "newmodules/newmodule14.html" 
