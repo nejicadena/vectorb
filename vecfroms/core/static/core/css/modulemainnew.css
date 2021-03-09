@@ -149,5 +149,295 @@ table {
 /* Contenedor 2*/
 /*--------------------------------------------------------------------------------------------------*
 /* Contenedor 3*/
+#nmm_cont3{
+    width: 100%;
+    min-height: 1000px;
+    margin-top: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: RGB(81,111,117);
+}
+
+#nmm_contCentral3{
+    width: 55%;
+    min-height: 1000px;
+    margin: auto;
+}
+
+/* Contenedor 3 modulo 1*/
+#module1_nmm_cont3{
+    display: flex;
+    width: 100%;
+    min-height: 200px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid RGB(137,157,161);
+}
+#nmm_module1_1{
+    width: 50%;
+    height: 200px;
+    border-bottom: 1px solid RGB(137,157,161);
+}
+#nmm_module1_1 h1{
+    font-family: robotoMedium;
+    font-size: 50px;
+    color: white;
+    margin-top: 50px;
+}
+#nmm_module1_1 h2{
+    font-family: robotoMedium;
+    font-size: 40px;
+    color: white;
+    margin-top: 20px;
+}
+
+#nmm_module1hover{
+    display: none;
+    padding-top: 3px;
+}
+#nmm_module1hover p{
+    font-family: robotoRegular;
+    font-size: 20px;
+    margin-top: 20px;
+}
+#nmm_module1_1:hover {
+    height: 400px;
+}
+#nmm_module1_1:hover #nmm_module1hover{
+    color: white;
+    height: 200px;
+    margin-top: 10px;
+    border-top:1px solid RGB(137,157,161);
+    display: block;
+}
+
+#nmm_module1_2{
+    width: 50%;
+    height: 200px;
+}
+#nmm_module1_2_Boton{
+    width: 120px;
+    height: 30px;
+    margin: auto;
+    margin-top: 85px;
+    background-color: white;
+    
+}
+#nmm_module1_2_Boton a{
+    display: block;
+    font-family: robotoMedium;
+    font-size: 20px;
+    line-height: 30px;
+    text-decoration: none;
+    color: RGB(83,134,146);
+}
+/* Contenedor 3 modulo 1*/
+/* Contenedor 3 modulo 2*/
+#module2_nmm_cont3{
+    display: flex;
+    width: 100%;
+    min-height: 200px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid RGB(137,157,161);
+}
+#nmm_module2_1{
+    width: 50%;
+    height: 200px;
+    border-bottom: 1px solid RGB(137,157,161);
+}
+#nmm_module2_1 h1{
+    font-family: robotoMedium;
+    font-size: 50px;
+    color: white;
+    margin-top: 50px;
+}
+#nmm_module2_1 h2{
+    font-family: robotoMedium;
+    font-size: 40px;
+    color: white;
+    margin-top: 20px;
+}
+
+#nmm_module2hover{
+    display: none;
+    padding-top: 3px;
+}
+#nmm_module2hover p{
+    font-family: robotoRegular;
+    font-size: 20px;
+    line-height: 50px;
+    margin-top: 30px;
+}
+#nmm_module2_1:hover {
+    height: 400px;
+}
+#nmm_module2_1:hover #nmm_module2hover{
+    color: white;
+    height: 200px;
+    margin-top: 10px;
+    border-top:1px solid RGB(137,157,161);
+    display: block;
+}
+
+#nmm_module2_2{
+    width: 50%;
+    height: 200px;
+}
+#nmm_module2_2_Boton{
+    width: 120px;
+    height: 30px;
+    margin: auto;
+    margin-top: 85px;
+    background-color: white;
+    
+}
+#nmm_module2_2_Boton a{
+    display: block;
+    font-family: robotoMedium;
+    font-size: 20px;
+    line-height: 30px;
+    text-decoration: none;
+    color: RGB(83,134,146);
+}
+/* Contenedor 3 modulo 2 */
+/* Contenedor 3 modulo 3 */
+#module3_nmm_cont3{
+    display: flex;
+    width: 100%;
+    min-height: 200px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid RGB(137,157,161);
+}
+#nmm_module3_1{
+    width: 50%;
+    height: 200px;
+    border-bottom: 1px solid RGB(137,157,161);
+}
+#nmm_module3_1 h1{
+    font-family: robotoMedium;
+    font-size: 50px;
+    color: white;
+    margin-top: 50px;
+}
+#nmm_module3_1 h2{
+    font-family: robotoMedium;
+    font-size: 40px;
+    color: white;
+    margin-top: 20px;
+}
+
+#nmm_module3hover{
+    display: none;
+    padding-top: 25px;
+}
+#nmm_module3hover p{
+    font-family: robotoRegular;
+    font-size: 20px;
+    line-height: 50px;
+    margin-top: 30px;
+}
+#nmm_module3_1:hover {
+    height: 400px;
+}
+#nmm_module3_1:hover #nmm_module3hover{
+    color: white;
+    height: 200px;
+    margin-top: 10px;
+    border-top:1px solid RGB(137,157,161);
+    display: block;
+}
+
+#nmm_module3_2{
+    width: 50%;
+    height: 200px;
+}
+#nmm_module3_2_Boton{
+    width: 120px;
+    height: 30px;
+    margin: auto;
+    margin-top: 85px;
+    background-color: white;
+    
+}
+#nmm_module3_2_Boton a{
+    display: block;
+    font-family: robotoMedium;
+    font-size: 20px;
+    line-height: 30px;
+    text-decoration: none;
+    color: RGB(83,134,146);
+}
+/* Contenedor 3 modulo 3 */
+/* Contenedor 3 modulo 4 */
+#module4_nmm_cont3{
+    display: flex;
+    width: 100%;
+    min-height: 200px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid RGB(137,157,161);
+}
+#nmm_module4_1{
+    width: 50%;
+    height: 200px;
+    border-bottom: 1px solid RGB(137,157,161);
+}
+#nmm_module4_1 h1{
+    font-family: robotoMedium;
+    font-size: 50px;
+    color: white;
+    margin-top: 50px;
+}
+#nmm_module4_1 h2{
+    font-family: robotoMedium;
+    font-size: 40px;
+    color: white;
+    margin-top: 20px;
+}
+
+#nmm_module4hover{
+    display: none;
+    padding-top: 25px;
+}
+#nmm_module4hover p{
+    font-family: robotoRegular;
+    font-size: 20px;
+    line-height: 50px;
+    margin-top: 30px;
+}
+#nmm_module4_1:hover {
+    height: 400px;
+}
+#nmm_module4_1:hover #nmm_module4hover{
+    color: white;
+    height: 200px;
+    margin-top: 10px;
+    border-top:1px solid RGB(137,157,161);
+    display: block;
+}
+
+#nmm_module4_2{
+    width: 50%;
+    height: 200px;
+}
+#nmm_module4_2_Boton{
+    width: 120px;
+    height: 30px;
+    margin: auto;
+    margin-top: 85px;
+    background-color: white;
+    
+}
+#nmm_module4_2_Boton a{
+    display: block;
+    font-family: robotoMedium;
+    font-size: 20px;
+    line-height: 30px;
+    text-decoration: none;
+    color: RGB(83,134,146);
+}
+/* Contenedor 3 modulo 4 */
 
 /* Contenedor 3*/
