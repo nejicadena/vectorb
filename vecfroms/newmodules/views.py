@@ -1,7 +1,7 @@
 from django.shortcuts import render,redirect
 from django.views.generic.base import TemplateView
 from django.views.generic.edit import FormView
-from .forms import Module12Form
+from .forms import Module12Form, Module14Form
 
 # Create your views here.
 
@@ -32,6 +32,12 @@ class newModulesPageView13(TemplateView):
 
     template_name= "newmodules/newmodule13.html" 
 
-class newModulesPageView14(TemplateView):
+class newModulesPageView14(FormView):
 
     template_name= "newmodules/newmodule14.html" 
+    form_class = Module14Form
+    success_url = 'newmodule13'
+    def form_valid(self,form):
+        form.instance.user = self.request.user
+        form.save()
+        return redirect('newmodule13')

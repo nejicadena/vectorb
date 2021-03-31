@@ -9,3 +9,11 @@ class Modelmodule12(models.Model):
 
     def __str__(self):
         return '{}'.format(str(self.user))
+
+class Modelmodule14(models.Model):
+    user = models.ForeignKey(User, related_name="moduleUser14", on_delete=models.CASCADE)
+    nancy = models.CharField(max_length=550)
+    
+
+    def __str__(self):
+        return '{}'.format(str(self.user))

@@ -23,7 +23,18 @@
             </video>
         <p> Responda las siguientes cuestiones y dé clic en continuar para ir al ejercicio del Módulo I.</p>
         <!-- Encuesta -->
-       <div class="typeform-widget" data-url="https://form.typeform.com/to/ifaV5D63?typeform-medium=embed-snippet" style="width: 100%; height: 500px;"></div> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm", b="https://embed.typeform.com/"; if(!gi.call(d,id)) { js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script>
+       <!--<div class="typeform-widget" data-url="https://form.typeform.com/to/ifaV5D63?typeform-medium=embed-snippet" style="width: 100%; height: 500px;"></div> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm", b="https://embed.typeform.com/"; if(!gi.call(d,id)) { js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script>-->
+
+        <form action="" method="POST">
+                {% csrf_token %}
+                <div class="form-group">
+                    <label>La enfermera Nancy pasó por algunas situaciones difíciles que fueron complicando su labor, 
+                    como el hecho de tener que realizar múltiples actividades en el hospital. Usted ¿qué situaciones complejas ha identificado a causa de su profesión?</label>
+                    <div class="input-group">
+                        {{form.nancy}}
+                    </div>
+                    {{form.nancy.errors}}
+                </div>
 
         <!-- Encuesta fin -->
     
@@ -32,9 +43,11 @@
                 <a href={% url 'newmodule13' %}><button>Regresar</button></a>
             </div>
             <div id="m12_boton2" class="m12_boton">
-                <a href={% url 'newmodule13' %}><button>Continuar</button></a>
+                 <!--<a href={% url 'newmodule13' %}><button>Continuar</button></a>-->
+                 <input type="submit" class="btn btn-primary btn-block py-2" value="Enviar">
             </div>
         </div>
+        </form>
         
     </div>
 </div>
