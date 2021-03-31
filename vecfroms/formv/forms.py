@@ -109,32 +109,32 @@ class ContactForm(forms.ModelForm):
         'who' : forms.TextInput(attrs={'class':'form-control'}),
         }
 
-    
+   # form-check-input
 
 class FormBornout(forms.Form):
     
-    que1 = forms.ChoiceField(choices=points, widget=forms.RadioSelect(attrs={'class':'form-check-input'}))
-    que2 = forms.ChoiceField(choices=points, widget=forms.RadioSelect(attrs={'class':'form-check-input'}))
-    que3 = forms.ChoiceField(choices=points, widget=forms.RadioSelect(attrs={'class':'form-check-input'}))
-    que4 = forms.ChoiceField(choices=points, widget=forms.RadioSelect(attrs={'class':'form-check-input'}))
-    que5 = forms.ChoiceField(choices=points, widget=forms.RadioSelect(attrs={'class':'form-check-input'}))
-    que6 = forms.ChoiceField(choices=points, widget=forms.RadioSelect(attrs={'class':'form-check-input'}))
-    que7 = forms.ChoiceField(choices=points, widget=forms.RadioSelect(attrs={'class':'form-check-input'}))
-    que8 = forms.ChoiceField(choices=points, widget=forms.RadioSelect(attrs={'class':'form-check-input'}))
-    que9 = forms.ChoiceField(choices=points, widget=forms.RadioSelect(attrs={'class':'form-check-input'}))
-    que10 = forms.ChoiceField(choices=points, widget=forms.RadioSelect(attrs={'class':'form-check-input'}))
-    que11 = forms.ChoiceField(choices=points, widget=forms.RadioSelect(attrs={'class':'form-check-input'}))
-    que12 = forms.ChoiceField(choices=points, widget=forms.RadioSelect(attrs={'class':'form-check-input'}))
-    que13 = forms.ChoiceField(choices=points, widget=forms.RadioSelect(attrs={'class':'form-check-input'}))
-    que14 = forms.ChoiceField(choices=points, widget=forms.RadioSelect(attrs={'class':'form-check-input'}))
-    que15 = forms.ChoiceField(choices=points, widget=forms.RadioSelect(attrs={'class':'form-check-input'}))
-    que16 = forms.ChoiceField(choices=points, widget=forms.RadioSelect(attrs={'class':'form-check-input'}))
-    que17 = forms.ChoiceField(choices=points, widget=forms.RadioSelect(attrs={'class':'form-check-input'}))
-    que18 = forms.ChoiceField(choices=points, widget=forms.RadioSelect(attrs={'class':'form-check-input'}))
-    que19 = forms.ChoiceField(choices=points, widget=forms.RadioSelect(attrs={'class':'form-check-input'}))
-    que20 = forms.ChoiceField(choices=points, widget=forms.RadioSelect(attrs={'class':'form-check-input'}))
-    que21 = forms.ChoiceField(choices=points, widget=forms.RadioSelect(attrs={'class':'form-check-input'}))
-    que22 = forms.ChoiceField(choices=points, widget=forms.RadioSelect(attrs={'class':'form-check-input'}))
+    que1 = forms.ChoiceField(choices=points, widget=forms.RadioSelect(attrs={'class':''}))
+    que2 = forms.ChoiceField(choices=points, widget=forms.RadioSelect(attrs={'class':''}))
+    que3 = forms.ChoiceField(choices=points, widget=forms.RadioSelect(attrs={'class':''}))
+    que4 = forms.ChoiceField(choices=points, widget=forms.RadioSelect(attrs={'class':''}))
+    que5 = forms.ChoiceField(choices=points, widget=forms.RadioSelect(attrs={'class':''}))
+    que6 = forms.ChoiceField(choices=points, widget=forms.RadioSelect(attrs={'class':''}))
+    que7 = forms.ChoiceField(choices=points, widget=forms.RadioSelect(attrs={'class':''}))
+    que8 = forms.ChoiceField(choices=points, widget=forms.RadioSelect(attrs={'class':''}))
+    que9 = forms.ChoiceField(choices=points, widget=forms.RadioSelect(attrs={'class':''}))
+    que10 = forms.ChoiceField(choices=points, widget=forms.RadioSelect(attrs={'class':''}))
+    que11 = forms.ChoiceField(choices=points, widget=forms.RadioSelect(attrs={'class':''}))
+    que12 = forms.ChoiceField(choices=points, widget=forms.RadioSelect(attrs={'class':''}))
+    que13 = forms.ChoiceField(choices=points, widget=forms.RadioSelect(attrs={'class':''}))
+    que14 = forms.ChoiceField(choices=points, widget=forms.RadioSelect(attrs={'class':''}))
+    que15 = forms.ChoiceField(choices=points, widget=forms.RadioSelect(attrs={'class':''}))
+    que16 = forms.ChoiceField(choices=points, widget=forms.RadioSelect(attrs={'class':''}))
+    que17 = forms.ChoiceField(choices=points, widget=forms.RadioSelect(attrs={'class':''}))
+    que18 = forms.ChoiceField(choices=points, widget=forms.RadioSelect(attrs={'class':''}))
+    que19 = forms.ChoiceField(choices=points, widget=forms.RadioSelect(attrs={'class':''}))
+    que20 = forms.ChoiceField(choices=points, widget=forms.RadioSelect(attrs={'class':''}))
+    que21 = forms.ChoiceField(choices=points, widget=forms.RadioSelect(attrs={'class':''}))
+    que22 = forms.ChoiceField(choices=points, widget=forms.RadioSelect(attrs={'class':''}))
 
 class FormConsent(forms.Form):
     acepted = forms.ChoiceField(choices=acepted,widget=forms.RadioSelect(attrs={'class':'form-check-input'}))

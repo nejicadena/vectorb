@@ -126,5 +126,5 @@ STATIC_URL = '/static/'
 
 # Auth redirects
 
-LOGIN_REDIRECT_URL = 'modules'
+LOGIN_REDIRECT_URL = 'newmodulemain'
 LOGOUT_REDIRECT_URL = 'home'

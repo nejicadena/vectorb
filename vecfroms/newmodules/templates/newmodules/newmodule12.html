@@ -19,22 +19,41 @@
         <p> Ahora que hemos revisado a grandes rasgos a qué se refiere el burnout, responda las siguientes preguntas y dé clic en continuar para ver el siguiente material.</p>
         <p> ¿Son similares las respuestas escritas en la pizarra? Probablemente llegamos a tener diversas ideas sobre lo que es el burnout, es por esto que en los siguientes materiales vamos a clarificar e indagar aún más sobre lo que sabemos de este padecimiento. </p>
         <p> Para ver el siguiente material, dé clic en continuar. </p>
-    
         <!-- Encuesta -->
+        <form action="" method="POST">
+                {% csrf_token %}
+                <div class="form-group">
+                    <label>Además de las que se mencionan en la imagen de arriba, 
+                    ¿qué otras consecuencias conoce que genera el Burnout?Este campo es obligatorio *</label>
+                    <div class="input-group">
+                        {{form.consecuencias}}
+                    </div>
+                    {{form.consecuencias.errors}}
+                </div>
+                <div class="form-group">
+                    <label>Escriba con sus palabras a qué se refiere el Burnout de 
+                    acuerdo a lo revisado en la imagen.Este campo es obligatorio  *</label>
+                    <div class="input-group">
+                        {{form.refiere}}
+                    </div>
+                    {{form.refiere.errors}}
+                </div>
+        <!-- Encuesta 
         <div class="typeform-widget" data-url="https://form.typeform.com/to/F5MdZxwd?typeform-medium=embed-snippet" style="width: 100%; height: 500px;"></div>
         <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm", b="https://embed.typeform.com/"; if(!gi.call(d,id)) { js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() 
         </script>
-        <!-- Encuesta fin -->
+         Encuesta fin -->
     
         <div id="m12_botones">
             <div id="m12_boton1" class="m12_boton">
                 <a href={% url 'newmodule1' %}><button>Regresar</button></a>
             </div>
             <div id="m12_boton2" class="m12_boton">
-                <a href={% url 'newmodule13' %}><button>Continuar</button></a>
+                <!--<a href={% url 'newmodule13' %}><button>Continuar</button></a>-->
+                <input type="submit" class="btn btn-primary btn-block py-2" value="Enviar">
             </div>
         </div>
-        
+        </form>
     </div>
 </div>
 
